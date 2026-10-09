@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "soundFile": "/Users/kjcornish/.gemini/antigravity/scratch/math140-cartoon/public/audio/voice/s5_l03.wav",
+    "duration": 1.23
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.34, "value": "H" },
+    { "start": 0.34, "end": 0.48, "value": "B" },
+    { "start": 0.48, "end": 0.62, "value": "C" },
+    { "start": 0.62, "end": 0.90, "value": "F" },
+    { "start": 0.90, "end": 1.18, "value": "B" },
+    { "start": 1.18, "end": 1.23, "value": "X" }
+  ]
+}

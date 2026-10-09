@@ -1,0 +1,3631 @@
+{
+  "generatedAt": "2026-10-08T22:09:31.234Z",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 3600,
+  "title": "Math 140 — AI vs. the Human Brain",
+  "characters": {
+    "KJ": {
+      "name": "KJ",
+      "role": "Energetic college student and interviewer",
+      "voice": {
+        "elevenlabs": "TX3LPaxmHKxFdv7VOQHJ",
+        "elevenlabsName": "Liam",
+        "settings": {
+          "stability": 0.35,
+          "style": 0.55,
+          "speed": 1.12
+        },
+        "openai": "verse",
+        "say": "Eddy (English (US))",
+        "direction": "Young, upbeat college student hosting a fun interview."
+      },
+      "fx": "none",
+      "emotions": [
+        "neutral",
+        "excited",
+        "curious",
+        "surprised",
+        "happy",
+        "thinking"
+      ]
+    },
+    "PROF": {
+      "name": "Professor",
+      "role": "Intelligent, approachable, mildly sarcastic math instructor",
+      "voice": {
+        "elevenlabs": "nPczCvzR6IEnmW1Hk9YZ",
+        "elevenlabsName": "Brian",
+        "settings": {
+          "stability": 0.45,
+          "style": 0.4,
+          "speed": 1.08
+        },
+        "openai": "ash",
+        "say": "Fred",
+        "direction": "Warm, witty math professor with dry, mildly sarcastic delivery."
+      },
+      "fx": "none",
+      "emotions": [
+        "neutral",
+        "skeptical",
+        "amused",
+        "stern",
+        "happy",
+        "explaining"
+      ]
+    },
+    "BOT": {
+      "name": "B.O.T.",
+      "role": "Enthusiastic floating robot with an animated digital face",
+      "voice": {
+        "elevenlabs": "IKne3meq5aSn9XLyUdCD",
+        "elevenlabsName": "Charlie",
+        "settings": {
+          "stability": 0.25,
+          "style": 0.75,
+          "speed": 1.15
+        },
+        "openai": "fable",
+        "say": "Junior",
+        "direction": "Hyper-excited cartoon robot, over-the-top enthusiasm."
+      },
+      "fx": "robot",
+      "emotions": [
+        "happy",
+        "excited",
+        "smug",
+        "shocked",
+        "sad",
+        "glitch"
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "The Big Question",
+      "startFrame": 0,
+      "endFrame": 450,
+      "background": "classroom",
+      "leadIn": 0.7,
+      "tailOut": 2.4,
+      "gap": 0.3,
+      "lines": [
+        {
+          "id": "s1_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "What if artificial intelligence could help you pass math… without doing your homework for you?",
+          "gapAfter": 0.75,
+          "sfxAfter": [
+            "boing",
+            "impact"
+          ],
+          "action": "BOT crashes through the ceiling right after this line",
+          "localStart": 21,
+          "startFrame": 21,
+          "durationFrames": 116,
+          "durationSec": 3.854,
+          "audio": "audio/voice/s1_l01.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.21,
+              "value": "B"
+            },
+            {
+              "start": 0.21,
+              "end": 0.28,
+              "value": "D"
+            },
+            {
+              "start": 0.28,
+              "end": 0.42,
+              "value": "B"
+            },
+            {
+              "start": 0.42,
+              "end": 0.49,
+              "value": "G"
+            },
+            {
+              "start": 0.49,
+              "end": 0.56,
+              "value": "B"
+            },
+            {
+              "start": 0.56,
+              "end": 0.63,
+              "value": "C"
+            },
+            {
+              "start": 0.63,
+              "end": 0.77,
+              "value": "B"
+            },
+            {
+              "start": 0.77,
+              "end": 0.91,
+              "value": "C"
+            },
+            {
+              "start": 0.91,
+              "end": 0.98,
+              "value": "H"
+            },
+            {
+              "start": 0.98,
+              "end": 1.12,
+              "value": "B"
+            },
+            {
+              "start": 1.12,
+              "end": 1.19,
+              "value": "C"
+            },
+            {
+              "start": 1.19,
+              "end": 1.33,
+              "value": "F"
+            },
+            {
+              "start": 1.33,
+              "end": 1.4,
+              "value": "B"
+            },
+            {
+              "start": 1.4,
+              "end": 1.54,
+              "value": "C"
+            },
+            {
+              "start": 1.54,
+              "end": 1.82,
+              "value": "A"
+            },
+            {
+              "start": 1.82,
+              "end": 1.89,
+              "value": "C"
+            },
+            {
+              "start": 1.89,
+              "end": 1.97,
+              "value": "B"
+            },
+            {
+              "start": 1.97,
+              "end": 2.04,
+              "value": "A"
+            },
+            {
+              "start": 2.04,
+              "end": 2.14,
+              "value": "C"
+            },
+            {
+              "start": 2.14,
+              "end": 2.42,
+              "value": "B"
+            },
+            {
+              "start": 2.42,
+              "end": 2.49,
+              "value": "F"
+            },
+            {
+              "start": 2.49,
+              "end": 2.63,
+              "value": "B"
+            },
+            {
+              "start": 2.63,
+              "end": 2.84,
+              "value": "F"
+            },
+            {
+              "start": 2.84,
+              "end": 2.91,
+              "value": "B"
+            },
+            {
+              "start": 2.91,
+              "end": 3.05,
+              "value": "F"
+            },
+            {
+              "start": 3.05,
+              "end": 3.19,
+              "value": "E"
+            },
+            {
+              "start": 3.19,
+              "end": 3.27,
+              "value": "A"
+            },
+            {
+              "start": 3.27,
+              "end": 3.34,
+              "value": "F"
+            },
+            {
+              "start": 3.34,
+              "end": 3.55,
+              "value": "B"
+            },
+            {
+              "start": 3.55,
+              "end": 3.62,
+              "value": "C"
+            },
+            {
+              "start": 3.62,
+              "end": 3.76,
+              "value": "F"
+            },
+            {
+              "start": 3.76,
+              "end": 3.85,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s1_l02",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "DID SOMEBODY SAY HOMEWORK?! I CAN SOLVE EVERYTHING!",
+          "ttsText": "Did somebody say HOMEWORK?! I can solve EVERYTHING!",
+          "gapAfter": 0.2,
+          "localStart": 159,
+          "startFrame": 159,
+          "durationFrames": 38,
+          "durationSec": 1.253,
+          "audio": "audio/voice/s1_l02.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.08,
+              "value": "B"
+            },
+            {
+              "start": 0.08,
+              "end": 0.33,
+              "value": "D"
+            },
+            {
+              "start": 0.33,
+              "end": 0.47,
+              "value": "B"
+            },
+            {
+              "start": 0.47,
+              "end": 0.72,
+              "value": "X"
+            },
+            {
+              "start": 0.72,
+              "end": 0.89,
+              "value": "B"
+            },
+            {
+              "start": 0.89,
+              "end": 1.03,
+              "value": "E"
+            },
+            {
+              "start": 1.03,
+              "end": 1.17,
+              "value": "F"
+            },
+            {
+              "start": 1.17,
+              "end": 1.25,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s1_l03",
+          "speaker": "PROF",
+          "emotion": "skeptical",
+          "text": "Everything? That's exactly what worries me.",
+          "action": "Title card slams in after this line",
+          "localStart": 203,
+          "startFrame": 203,
+          "durationFrames": 60,
+          "durationSec": 1.975,
+          "audio": "audio/voice/s1_l03.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.1,
+              "value": "C"
+            },
+            {
+              "start": 0.1,
+              "end": 0.44,
+              "value": "B"
+            },
+            {
+              "start": 0.44,
+              "end": 0.74,
+              "value": "X"
+            },
+            {
+              "start": 0.74,
+              "end": 0.79,
+              "value": "B"
+            },
+            {
+              "start": 0.79,
+              "end": 0.83,
+              "value": "C"
+            },
+            {
+              "start": 0.83,
+              "end": 1.53,
+              "value": "B"
+            },
+            {
+              "start": 1.53,
+              "end": 1.67,
+              "value": "E"
+            },
+            {
+              "start": 1.67,
+              "end": 1.74,
+              "value": "B"
+            },
+            {
+              "start": 1.74,
+              "end": 1.82,
+              "value": "A"
+            },
+            {
+              "start": 1.82,
+              "end": 1.93,
+              "value": "B"
+            },
+            {
+              "start": 1.93,
+              "end": 1.97,
+              "value": "X"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The Five Rules",
+      "startFrame": 450,
+      "endFrame": 1350,
+      "background": "stage",
+      "leadIn": 0.5,
+      "tailOut": 0.4,
+      "gap": 0.22,
+      "lines": [
+        {
+          "id": "s2_l01",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "We're building an AI assistant for Math 140. But we've got five rules!",
+          "ttsText": "We're building an AI assistant for Math one-forty. But we've got five rules!",
+          "localStart": 15,
+          "startFrame": 465,
+          "durationFrames": 107,
+          "durationSec": 3.558,
+          "audio": "audio/voice/s2_l01.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.01,
+              "value": "X"
+            },
+            {
+              "start": 0.01,
+              "end": 0.07,
+              "value": "F"
+            },
+            {
+              "start": 0.07,
+              "end": 0.13,
+              "value": "A"
+            },
+            {
+              "start": 0.13,
+              "end": 0.42,
+              "value": "B"
+            },
+            {
+              "start": 0.42,
+              "end": 0.56,
+              "value": "C"
+            },
+            {
+              "start": 0.56,
+              "end": 0.63,
+              "value": "B"
+            },
+            {
+              "start": 0.63,
+              "end": 0.7,
+              "value": "C"
+            },
+            {
+              "start": 0.7,
+              "end": 1.26,
+              "value": "B"
+            },
+            {
+              "start": 1.26,
+              "end": 1.33,
+              "value": "E"
+            },
+            {
+              "start": 1.33,
+              "end": 1.41,
+              "value": "A"
+            },
+            {
+              "start": 1.41,
+              "end": 1.5,
+              "value": "C"
+            },
+            {
+              "start": 1.5,
+              "end": 1.57,
+              "value": "B"
+            },
+            {
+              "start": 1.57,
+              "end": 1.64,
+              "value": "F"
+            },
+            {
+              "start": 1.64,
+              "end": 1.81,
+              "value": "B"
+            },
+            {
+              "start": 1.81,
+              "end": 1.86,
+              "value": "G"
+            },
+            {
+              "start": 1.86,
+              "end": 1.91,
+              "value": "E"
+            },
+            {
+              "start": 1.91,
+              "end": 2.12,
+              "value": "B"
+            },
+            {
+              "start": 2.12,
+              "end": 2.41,
+              "value": "X"
+            },
+            {
+              "start": 2.41,
+              "end": 2.92,
+              "value": "B"
+            },
+            {
+              "start": 2.92,
+              "end": 2.99,
+              "value": "G"
+            },
+            {
+              "start": 2.99,
+              "end": 3.06,
+              "value": "C"
+            },
+            {
+              "start": 3.06,
+              "end": 3.13,
+              "value": "G"
+            },
+            {
+              "start": 3.13,
+              "end": 3.41,
+              "value": "F"
+            },
+            {
+              "start": 3.41,
+              "end": 3.48,
+              "value": "B"
+            },
+            {
+              "start": 3.48,
+              "end": 3.55,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l02",
+          "speaker": "PROF",
+          "emotion": "amused",
+          "text": "Let's hear them.",
+          "localStart": 128,
+          "startFrame": 578,
+          "durationFrames": 19,
+          "durationSec": 0.617,
+          "audio": "audio/voice/s2_l02.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.4,
+              "value": "B"
+            },
+            {
+              "start": 0.4,
+              "end": 0.47,
+              "value": "C"
+            },
+            {
+              "start": 0.47,
+              "end": 0.55,
+              "value": "A"
+            },
+            {
+              "start": 0.55,
+              "end": 0.61,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l03",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "One! Students construct their own shapes.",
+          "rule": 1,
+          "gapAfter": 0.15,
+          "localStart": 153,
+          "startFrame": 603,
+          "durationFrames": 69,
+          "durationSec": 2.274,
+          "audio": "audio/voice/s2_l03.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.09,
+              "value": "F"
+            },
+            {
+              "start": 0.09,
+              "end": 0.29,
+              "value": "C"
+            },
+            {
+              "start": 0.29,
+              "end": 0.66,
+              "value": "X"
+            },
+            {
+              "start": 0.66,
+              "end": 1.51,
+              "value": "B"
+            },
+            {
+              "start": 1.51,
+              "end": 1.58,
+              "value": "C"
+            },
+            {
+              "start": 1.58,
+              "end": 1.65,
+              "value": "E"
+            },
+            {
+              "start": 1.65,
+              "end": 1.79,
+              "value": "F"
+            },
+            {
+              "start": 1.79,
+              "end": 1.86,
+              "value": "B"
+            },
+            {
+              "start": 1.86,
+              "end": 1.93,
+              "value": "C"
+            },
+            {
+              "start": 1.93,
+              "end": 2.09,
+              "value": "A"
+            },
+            {
+              "start": 2.09,
+              "end": 2.17,
+              "value": "B"
+            },
+            {
+              "start": 2.17,
+              "end": 2.27,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l04",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Two! They write their own proofs.",
+          "rule": 2,
+          "gapAfter": 0.1,
+          "localStart": 226,
+          "startFrame": 676,
+          "durationFrames": 48,
+          "durationSec": 1.571,
+          "audio": "audio/voice/s2_l04.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.19,
+              "value": "F"
+            },
+            {
+              "start": 0.19,
+              "end": 0.5,
+              "value": "X"
+            },
+            {
+              "start": 0.5,
+              "end": 0.54,
+              "value": "B"
+            },
+            {
+              "start": 0.54,
+              "end": 0.58,
+              "value": "C"
+            },
+            {
+              "start": 0.58,
+              "end": 0.79,
+              "value": "B"
+            },
+            {
+              "start": 0.79,
+              "end": 0.93,
+              "value": "C"
+            },
+            {
+              "start": 0.93,
+              "end": 1,
+              "value": "E"
+            },
+            {
+              "start": 1,
+              "end": 1.08,
+              "value": "F"
+            },
+            {
+              "start": 1.08,
+              "end": 1.14,
+              "value": "A"
+            },
+            {
+              "start": 1.14,
+              "end": 1.27,
+              "value": "F"
+            },
+            {
+              "start": 1.27,
+              "end": 1.41,
+              "value": "G"
+            },
+            {
+              "start": 1.41,
+              "end": 1.48,
+              "value": "B"
+            },
+            {
+              "start": 1.48,
+              "end": 1.57,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l05",
+          "speaker": "BOT",
+          "emotion": "smug",
+          "text": "But I know a thousand proofs!",
+          "gag": "censor",
+          "localStart": 277,
+          "startFrame": 727,
+          "durationFrames": 17,
+          "durationSec": 0.561,
+          "audio": "audio/voice/s2_l05.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.06,
+              "value": "X"
+            },
+            {
+              "start": 0.06,
+              "end": 0.34,
+              "value": "E"
+            },
+            {
+              "start": 0.34,
+              "end": 0.48,
+              "value": "F"
+            },
+            {
+              "start": 0.48,
+              "end": 0.56,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l06",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "Great! Show examples. Don't do their work.",
+          "localStart": 300,
+          "startFrame": 750,
+          "durationFrames": 69,
+          "durationSec": 2.295,
+          "audio": "audio/voice/s2_l06.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.42,
+              "value": "B"
+            },
+            {
+              "start": 0.42,
+              "end": 0.61,
+              "value": "X"
+            },
+            {
+              "start": 0.61,
+              "end": 0.69,
+              "value": "B"
+            },
+            {
+              "start": 0.69,
+              "end": 0.76,
+              "value": "E"
+            },
+            {
+              "start": 0.76,
+              "end": 0.83,
+              "value": "F"
+            },
+            {
+              "start": 0.83,
+              "end": 0.97,
+              "value": "B"
+            },
+            {
+              "start": 0.97,
+              "end": 1.04,
+              "value": "C"
+            },
+            {
+              "start": 1.04,
+              "end": 1.15,
+              "value": "A"
+            },
+            {
+              "start": 1.15,
+              "end": 1.35,
+              "value": "B"
+            },
+            {
+              "start": 1.35,
+              "end": 1.51,
+              "value": "X"
+            },
+            {
+              "start": 1.51,
+              "end": 1.65,
+              "value": "B"
+            },
+            {
+              "start": 1.65,
+              "end": 1.86,
+              "value": "F"
+            },
+            {
+              "start": 1.86,
+              "end": 1.93,
+              "value": "B"
+            },
+            {
+              "start": 1.93,
+              "end": 2,
+              "value": "C"
+            },
+            {
+              "start": 2,
+              "end": 2.07,
+              "value": "F"
+            },
+            {
+              "start": 2.07,
+              "end": 2.21,
+              "value": "E"
+            },
+            {
+              "start": 2.21,
+              "end": 2.28,
+              "value": "C"
+            },
+            {
+              "start": 2.28,
+              "end": 2.29,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l07",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Three! AI can give hints, but never the answer.",
+          "rule": 3,
+          "gag": "censor",
+          "localStart": 376,
+          "startFrame": 826,
+          "durationFrames": 74,
+          "durationSec": 2.452,
+          "audio": "audio/voice/s2_l07.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.27,
+              "value": "B"
+            },
+            {
+              "start": 0.27,
+              "end": 0.58,
+              "value": "X"
+            },
+            {
+              "start": 0.58,
+              "end": 0.63,
+              "value": "C"
+            },
+            {
+              "start": 0.63,
+              "end": 0.68,
+              "value": "B"
+            },
+            {
+              "start": 0.68,
+              "end": 0.82,
+              "value": "C"
+            },
+            {
+              "start": 0.82,
+              "end": 1.03,
+              "value": "B"
+            },
+            {
+              "start": 1.03,
+              "end": 1.1,
+              "value": "G"
+            },
+            {
+              "start": 1.1,
+              "end": 1.46,
+              "value": "B"
+            },
+            {
+              "start": 1.46,
+              "end": 1.58,
+              "value": "A"
+            },
+            {
+              "start": 1.58,
+              "end": 1.62,
+              "value": "B"
+            },
+            {
+              "start": 1.62,
+              "end": 1.8,
+              "value": "C"
+            },
+            {
+              "start": 1.8,
+              "end": 1.94,
+              "value": "E"
+            },
+            {
+              "start": 1.94,
+              "end": 2.01,
+              "value": "B"
+            },
+            {
+              "start": 2.01,
+              "end": 2.15,
+              "value": "C"
+            },
+            {
+              "start": 2.15,
+              "end": 2.22,
+              "value": "B"
+            },
+            {
+              "start": 2.22,
+              "end": 2.36,
+              "value": "E"
+            },
+            {
+              "start": 2.36,
+              "end": 2.45,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l08",
+          "speaker": "PROF",
+          "emotion": "stern",
+          "text": "Careful! There's a fine line between giving a hint and fixing the problem.",
+          "localStart": 456,
+          "startFrame": 906,
+          "durationFrames": 92,
+          "durationSec": 3.046,
+          "audio": "audio/voice/s2_l08.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.14,
+              "value": "C"
+            },
+            {
+              "start": 0.14,
+              "end": 0.21,
+              "value": "B"
+            },
+            {
+              "start": 0.21,
+              "end": 0.28,
+              "value": "C"
+            },
+            {
+              "start": 0.28,
+              "end": 0.42,
+              "value": "H"
+            },
+            {
+              "start": 0.42,
+              "end": 0.67,
+              "value": "B"
+            },
+            {
+              "start": 0.67,
+              "end": 0.74,
+              "value": "C"
+            },
+            {
+              "start": 0.74,
+              "end": 0.88,
+              "value": "B"
+            },
+            {
+              "start": 0.88,
+              "end": 0.95,
+              "value": "C"
+            },
+            {
+              "start": 0.95,
+              "end": 1.02,
+              "value": "G"
+            },
+            {
+              "start": 1.02,
+              "end": 1.09,
+              "value": "B"
+            },
+            {
+              "start": 1.09,
+              "end": 1.23,
+              "value": "H"
+            },
+            {
+              "start": 1.23,
+              "end": 1.3,
+              "value": "E"
+            },
+            {
+              "start": 1.3,
+              "end": 1.44,
+              "value": "F"
+            },
+            {
+              "start": 1.44,
+              "end": 1.51,
+              "value": "B"
+            },
+            {
+              "start": 1.51,
+              "end": 1.79,
+              "value": "C"
+            },
+            {
+              "start": 1.79,
+              "end": 2.21,
+              "value": "B"
+            },
+            {
+              "start": 2.21,
+              "end": 2.28,
+              "value": "G"
+            },
+            {
+              "start": 2.28,
+              "end": 2.56,
+              "value": "B"
+            },
+            {
+              "start": 2.56,
+              "end": 2.64,
+              "value": "A"
+            },
+            {
+              "start": 2.64,
+              "end": 2.7,
+              "value": "B"
+            },
+            {
+              "start": 2.7,
+              "end": 2.75,
+              "value": "D"
+            },
+            {
+              "start": 2.75,
+              "end": 2.86,
+              "value": "A"
+            },
+            {
+              "start": 2.86,
+              "end": 2.92,
+              "value": "B"
+            },
+            {
+              "start": 2.92,
+              "end": 3,
+              "value": "A"
+            },
+            {
+              "start": 3,
+              "end": 3.04,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l09",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Four! Students explain their own work.",
+          "rule": 4,
+          "gapAfter": 0.15,
+          "localStart": 554,
+          "startFrame": 1004,
+          "durationFrames": 63,
+          "durationSec": 2.097,
+          "audio": "audio/voice/s2_l09.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.08,
+              "value": "G"
+            },
+            {
+              "start": 0.08,
+              "end": 0.26,
+              "value": "E"
+            },
+            {
+              "start": 0.26,
+              "end": 0.54,
+              "value": "C"
+            },
+            {
+              "start": 0.54,
+              "end": 0.58,
+              "value": "E"
+            },
+            {
+              "start": 0.58,
+              "end": 0.74,
+              "value": "F"
+            },
+            {
+              "start": 0.74,
+              "end": 1.02,
+              "value": "B"
+            },
+            {
+              "start": 1.02,
+              "end": 1.1,
+              "value": "A"
+            },
+            {
+              "start": 1.1,
+              "end": 1.21,
+              "value": "H"
+            },
+            {
+              "start": 1.21,
+              "end": 1.28,
+              "value": "C"
+            },
+            {
+              "start": 1.28,
+              "end": 1.35,
+              "value": "B"
+            },
+            {
+              "start": 1.35,
+              "end": 1.49,
+              "value": "C"
+            },
+            {
+              "start": 1.49,
+              "end": 1.56,
+              "value": "E"
+            },
+            {
+              "start": 1.56,
+              "end": 1.77,
+              "value": "F"
+            },
+            {
+              "start": 1.77,
+              "end": 1.91,
+              "value": "E"
+            },
+            {
+              "start": 1.91,
+              "end": 2.05,
+              "value": "C"
+            },
+            {
+              "start": 2.05,
+              "end": 2.09,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l10",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Five! No AI during quizzes!",
+          "rule": 5,
+          "localStart": 621,
+          "startFrame": 1071,
+          "durationFrames": 55,
+          "durationSec": 1.82,
+          "audio": "audio/voice/s2_l10.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.11,
+              "value": "G"
+            },
+            {
+              "start": 0.11,
+              "end": 0.18,
+              "value": "C"
+            },
+            {
+              "start": 0.18,
+              "end": 0.25,
+              "value": "B"
+            },
+            {
+              "start": 0.25,
+              "end": 0.32,
+              "value": "G"
+            },
+            {
+              "start": 0.32,
+              "end": 0.69,
+              "value": "X"
+            },
+            {
+              "start": 0.69,
+              "end": 0.74,
+              "value": "C"
+            },
+            {
+              "start": 0.74,
+              "end": 0.79,
+              "value": "E"
+            },
+            {
+              "start": 0.79,
+              "end": 0.86,
+              "value": "F"
+            },
+            {
+              "start": 0.86,
+              "end": 0.93,
+              "value": "C"
+            },
+            {
+              "start": 0.93,
+              "end": 1,
+              "value": "B"
+            },
+            {
+              "start": 1,
+              "end": 1.07,
+              "value": "C"
+            },
+            {
+              "start": 1.07,
+              "end": 1.21,
+              "value": "F"
+            },
+            {
+              "start": 1.21,
+              "end": 1.42,
+              "value": "B"
+            },
+            {
+              "start": 1.42,
+              "end": 1.49,
+              "value": "F"
+            },
+            {
+              "start": 1.49,
+              "end": 1.77,
+              "value": "B"
+            },
+            {
+              "start": 1.77,
+              "end": 1.82,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l11",
+          "speaker": "BOT",
+          "emotion": "sad",
+          "text": "So… I'm basically a tutor with a mute button?",
+          "localStart": 683,
+          "startFrame": 1133,
+          "durationFrames": 28,
+          "durationSec": 0.925,
+          "audio": "audio/voice/s2_l11.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.12,
+              "value": "X"
+            },
+            {
+              "start": 0.12,
+              "end": 0.18,
+              "value": "C"
+            },
+            {
+              "start": 0.18,
+              "end": 0.8,
+              "value": "B"
+            },
+            {
+              "start": 0.8,
+              "end": 0.92,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s2_l12",
+          "speaker": "PROF",
+          "emotion": "amused",
+          "text": "Now you're getting it.",
+          "localStart": 717,
+          "startFrame": 1167,
+          "durationFrames": 25,
+          "durationSec": 0.802,
+          "audio": "audio/voice/s2_l12.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.16,
+              "value": "C"
+            },
+            {
+              "start": 0.16,
+              "end": 0.23,
+              "value": "F"
+            },
+            {
+              "start": 0.23,
+              "end": 0.79,
+              "value": "B"
+            },
+            {
+              "start": 0.79,
+              "end": 0.8,
+              "value": "X"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Where Students Struggle",
+      "startFrame": 1350,
+      "endFrame": 1950,
+      "background": "study",
+      "leadIn": 0.6,
+      "tailOut": 0.4,
+      "gap": 0.28,
+      "lines": [
+        {
+          "id": "s3_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "Where do students struggle most?",
+          "localStart": 18,
+          "startFrame": 1368,
+          "durationFrames": 46,
+          "durationSec": 1.501,
+          "audio": "audio/voice/s3_l01.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.08,
+              "value": "F"
+            },
+            {
+              "start": 0.08,
+              "end": 0.12,
+              "value": "C"
+            },
+            {
+              "start": 0.12,
+              "end": 0.47,
+              "value": "F"
+            },
+            {
+              "start": 0.47,
+              "end": 0.68,
+              "value": "B"
+            },
+            {
+              "start": 0.68,
+              "end": 0.89,
+              "value": "F"
+            },
+            {
+              "start": 0.89,
+              "end": 1.03,
+              "value": "E"
+            },
+            {
+              "start": 1.03,
+              "end": 1.11,
+              "value": "A"
+            },
+            {
+              "start": 1.11,
+              "end": 1.18,
+              "value": "E"
+            },
+            {
+              "start": 1.18,
+              "end": 1.24,
+              "value": "F"
+            },
+            {
+              "start": 1.24,
+              "end": 1.38,
+              "value": "B"
+            },
+            {
+              "start": 1.38,
+              "end": 1.5,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s3_l02",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "Vocabulary. Interpretation. Understanding what the mathematics actually means.",
+          "action": "Equation morphs into alien symbols",
+          "localStart": 71,
+          "startFrame": 1421,
+          "durationFrames": 119,
+          "durationSec": 3.954,
+          "audio": "audio/voice/s3_l02.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.21,
+              "value": "C"
+            },
+            {
+              "start": 0.21,
+              "end": 0.29,
+              "value": "A"
+            },
+            {
+              "start": 0.29,
+              "end": 0.42,
+              "value": "C"
+            },
+            {
+              "start": 0.42,
+              "end": 0.49,
+              "value": "H"
+            },
+            {
+              "start": 0.49,
+              "end": 0.7,
+              "value": "B"
+            },
+            {
+              "start": 0.7,
+              "end": 0.92,
+              "value": "X"
+            },
+            {
+              "start": 0.92,
+              "end": 1.09,
+              "value": "B"
+            },
+            {
+              "start": 1.09,
+              "end": 1.17,
+              "value": "A"
+            },
+            {
+              "start": 1.17,
+              "end": 1.28,
+              "value": "B"
+            },
+            {
+              "start": 1.28,
+              "end": 1.42,
+              "value": "C"
+            },
+            {
+              "start": 1.42,
+              "end": 1.89,
+              "value": "B"
+            },
+            {
+              "start": 1.89,
+              "end": 1.95,
+              "value": "C"
+            },
+            {
+              "start": 1.95,
+              "end": 2.08,
+              "value": "B"
+            },
+            {
+              "start": 2.08,
+              "end": 2.29,
+              "value": "C"
+            },
+            {
+              "start": 2.29,
+              "end": 2.43,
+              "value": "B"
+            },
+            {
+              "start": 2.43,
+              "end": 2.5,
+              "value": "F"
+            },
+            {
+              "start": 2.5,
+              "end": 2.78,
+              "value": "B"
+            },
+            {
+              "start": 2.78,
+              "end": 2.86,
+              "value": "A"
+            },
+            {
+              "start": 2.86,
+              "end": 2.91,
+              "value": "C"
+            },
+            {
+              "start": 2.91,
+              "end": 3.17,
+              "value": "B"
+            },
+            {
+              "start": 3.17,
+              "end": 3.24,
+              "value": "C"
+            },
+            {
+              "start": 3.24,
+              "end": 3.45,
+              "value": "F"
+            },
+            {
+              "start": 3.45,
+              "end": 3.59,
+              "value": "B"
+            },
+            {
+              "start": 3.59,
+              "end": 3.67,
+              "value": "A"
+            },
+            {
+              "start": 3.67,
+              "end": 3.94,
+              "value": "B"
+            },
+            {
+              "start": 3.94,
+              "end": 3.95,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s3_l03",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "I CAN TRANSLATE MATH INTO HUMAN!",
+          "ttsText": "I can translate MATH into HUMAN!",
+          "action": "Alien symbols morph into illustrated explanation",
+          "localStart": 198,
+          "startFrame": 1548,
+          "durationFrames": 21,
+          "durationSec": 0.694,
+          "audio": "audio/voice/s3_l03.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.09,
+              "value": "F"
+            },
+            {
+              "start": 0.09,
+              "end": 0.57,
+              "value": "B"
+            },
+            {
+              "start": 0.57,
+              "end": 0.64,
+              "value": "C"
+            },
+            {
+              "start": 0.64,
+              "end": 0.69,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s3_l04",
+          "speaker": "PROF",
+          "emotion": "happy",
+          "text": "That's useful! AI can guide students. But understanding the answer is their responsibility.",
+          "localStart": 228,
+          "startFrame": 1578,
+          "durationFrames": 130,
+          "durationSec": 4.302,
+          "audio": "audio/voice/s3_l04.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.1,
+              "value": "B"
+            },
+            {
+              "start": 0.1,
+              "end": 0.44,
+              "value": "F"
+            },
+            {
+              "start": 0.44,
+              "end": 0.51,
+              "value": "C"
+            },
+            {
+              "start": 0.51,
+              "end": 0.65,
+              "value": "H"
+            },
+            {
+              "start": 0.65,
+              "end": 0.91,
+              "value": "B"
+            },
+            {
+              "start": 0.91,
+              "end": 0.95,
+              "value": "C"
+            },
+            {
+              "start": 0.95,
+              "end": 0.99,
+              "value": "B"
+            },
+            {
+              "start": 0.99,
+              "end": 1.06,
+              "value": "C"
+            },
+            {
+              "start": 1.06,
+              "end": 1.34,
+              "value": "B"
+            },
+            {
+              "start": 1.34,
+              "end": 1.41,
+              "value": "C"
+            },
+            {
+              "start": 1.41,
+              "end": 1.69,
+              "value": "F"
+            },
+            {
+              "start": 1.69,
+              "end": 2.14,
+              "value": "B"
+            },
+            {
+              "start": 2.14,
+              "end": 2.28,
+              "value": "A"
+            },
+            {
+              "start": 2.28,
+              "end": 2.33,
+              "value": "B"
+            },
+            {
+              "start": 2.33,
+              "end": 2.44,
+              "value": "C"
+            },
+            {
+              "start": 2.44,
+              "end": 2.51,
+              "value": "B"
+            },
+            {
+              "start": 2.51,
+              "end": 2.58,
+              "value": "E"
+            },
+            {
+              "start": 2.58,
+              "end": 2.72,
+              "value": "C"
+            },
+            {
+              "start": 2.72,
+              "end": 2.93,
+              "value": "B"
+            },
+            {
+              "start": 2.93,
+              "end": 3.14,
+              "value": "C"
+            },
+            {
+              "start": 3.14,
+              "end": 3.21,
+              "value": "B"
+            },
+            {
+              "start": 3.21,
+              "end": 3.28,
+              "value": "E"
+            },
+            {
+              "start": 3.28,
+              "end": 3.42,
+              "value": "B"
+            },
+            {
+              "start": 3.42,
+              "end": 3.49,
+              "value": "C"
+            },
+            {
+              "start": 3.49,
+              "end": 3.56,
+              "value": "B"
+            },
+            {
+              "start": 3.56,
+              "end": 3.64,
+              "value": "A"
+            },
+            {
+              "start": 3.64,
+              "end": 3.77,
+              "value": "D"
+            },
+            {
+              "start": 3.77,
+              "end": 3.83,
+              "value": "C"
+            },
+            {
+              "start": 3.83,
+              "end": 3.91,
+              "value": "A"
+            },
+            {
+              "start": 3.91,
+              "end": 4.26,
+              "value": "B"
+            },
+            {
+              "start": 4.26,
+              "end": 4.3,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s3_l05",
+          "speaker": "KJ",
+          "emotion": "thinking",
+          "text": "So the goal isn't just getting the answer?",
+          "localStart": 365,
+          "startFrame": 1715,
+          "durationFrames": 51,
+          "durationSec": 1.672,
+          "audio": "audio/voice/s3_l05.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.07,
+              "value": "B"
+            },
+            {
+              "start": 0.07,
+              "end": 0.11,
+              "value": "E"
+            },
+            {
+              "start": 0.11,
+              "end": 0.18,
+              "value": "B"
+            },
+            {
+              "start": 0.18,
+              "end": 0.32,
+              "value": "E"
+            },
+            {
+              "start": 0.32,
+              "end": 0.39,
+              "value": "F"
+            },
+            {
+              "start": 0.39,
+              "end": 0.74,
+              "value": "B"
+            },
+            {
+              "start": 0.74,
+              "end": 0.81,
+              "value": "C"
+            },
+            {
+              "start": 0.81,
+              "end": 1.23,
+              "value": "B"
+            },
+            {
+              "start": 1.23,
+              "end": 1.37,
+              "value": "C"
+            },
+            {
+              "start": 1.37,
+              "end": 1.44,
+              "value": "B"
+            },
+            {
+              "start": 1.44,
+              "end": 1.58,
+              "value": "E"
+            },
+            {
+              "start": 1.58,
+              "end": 1.67,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s3_l06",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "Exactly. It's knowing what the answer means.",
+          "localStart": 424,
+          "startFrame": 1774,
+          "durationFrames": 58,
+          "durationSec": 1.929,
+          "audio": "audio/voice/s3_l06.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.02,
+              "value": "X"
+            },
+            {
+              "start": 0.02,
+              "end": 0.47,
+              "value": "B"
+            },
+            {
+              "start": 0.47,
+              "end": 0.7,
+              "value": "X"
+            },
+            {
+              "start": 0.7,
+              "end": 0.86,
+              "value": "B"
+            },
+            {
+              "start": 0.86,
+              "end": 0.93,
+              "value": "E"
+            },
+            {
+              "start": 0.93,
+              "end": 1,
+              "value": "F"
+            },
+            {
+              "start": 1,
+              "end": 1.07,
+              "value": "B"
+            },
+            {
+              "start": 1.07,
+              "end": 1.14,
+              "value": "F"
+            },
+            {
+              "start": 1.14,
+              "end": 1.28,
+              "value": "B"
+            },
+            {
+              "start": 1.28,
+              "end": 1.42,
+              "value": "C"
+            },
+            {
+              "start": 1.42,
+              "end": 1.49,
+              "value": "B"
+            },
+            {
+              "start": 1.49,
+              "end": 1.56,
+              "value": "E"
+            },
+            {
+              "start": 1.56,
+              "end": 1.64,
+              "value": "A"
+            },
+            {
+              "start": 1.64,
+              "end": 1.91,
+              "value": "B"
+            },
+            {
+              "start": 1.91,
+              "end": 1.92,
+              "value": "X"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "When AI Gets It Wrong",
+      "startFrame": 1950,
+      "endFrame": 2550,
+      "background": "classroom",
+      "leadIn": 1.3,
+      "tailOut": 0.5,
+      "gap": 0.3,
+      "lines": [
+        {
+          "id": "s4_l01",
+          "speaker": "BOT",
+          "emotion": "smug",
+          "text": "MATHEMATICAL GENIUS!",
+          "ttsText": "Mathematical GENIUS!",
+          "action": "2 + 2 = 5 on screen, confetti",
+          "localStart": 39,
+          "startFrame": 1989,
+          "durationFrames": 15,
+          "durationSec": 0.493,
+          "audio": "audio/voice/s4_l01.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.24,
+              "value": "X"
+            },
+            {
+              "start": 0.24,
+              "end": 0.33,
+              "value": "E"
+            },
+            {
+              "start": 0.33,
+              "end": 0.4,
+              "value": "F"
+            },
+            {
+              "start": 0.4,
+              "end": 0.49,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s4_l02",
+          "speaker": "PROF",
+          "emotion": "stern",
+          "text": "Absolutely not.",
+          "gapAfter": 0.55,
+          "sfxAfter": [
+            "scratch"
+          ],
+          "localStart": 63,
+          "startFrame": 2013,
+          "durationFrames": 24,
+          "durationSec": 0.779,
+          "audio": "audio/voice/s4_l02.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.01,
+              "value": "X"
+            },
+            {
+              "start": 0.01,
+              "end": 0.09,
+              "value": "A"
+            },
+            {
+              "start": 0.09,
+              "end": 0.15,
+              "value": "B"
+            },
+            {
+              "start": 0.15,
+              "end": 0.21,
+              "value": "C"
+            },
+            {
+              "start": 0.21,
+              "end": 0.28,
+              "value": "H"
+            },
+            {
+              "start": 0.28,
+              "end": 0.49,
+              "value": "B"
+            },
+            {
+              "start": 0.49,
+              "end": 0.56,
+              "value": "D"
+            },
+            {
+              "start": 0.56,
+              "end": 0.7,
+              "value": "B"
+            },
+            {
+              "start": 0.7,
+              "end": 0.77,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s4_l03",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "What happens when AI makes mistakes?",
+          "localStart": 103,
+          "startFrame": 2053,
+          "durationFrames": 51,
+          "durationSec": 1.678,
+          "audio": "audio/voice/s4_l03.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.09,
+              "value": "B"
+            },
+            {
+              "start": 0.09,
+              "end": 0.22,
+              "value": "C"
+            },
+            {
+              "start": 0.22,
+              "end": 0.34,
+              "value": "A"
+            },
+            {
+              "start": 0.34,
+              "end": 0.39,
+              "value": "F"
+            },
+            {
+              "start": 0.39,
+              "end": 0.57,
+              "value": "B"
+            },
+            {
+              "start": 0.57,
+              "end": 0.78,
+              "value": "C"
+            },
+            {
+              "start": 0.78,
+              "end": 0.85,
+              "value": "B"
+            },
+            {
+              "start": 0.85,
+              "end": 0.93,
+              "value": "A"
+            },
+            {
+              "start": 0.93,
+              "end": 1,
+              "value": "C"
+            },
+            {
+              "start": 1,
+              "end": 1.07,
+              "value": "B"
+            },
+            {
+              "start": 1.07,
+              "end": 1.15,
+              "value": "A"
+            },
+            {
+              "start": 1.15,
+              "end": 1.23,
+              "value": "B"
+            },
+            {
+              "start": 1.23,
+              "end": 1.44,
+              "value": "C"
+            },
+            {
+              "start": 1.44,
+              "end": 1.58,
+              "value": "B"
+            },
+            {
+              "start": 1.58,
+              "end": 1.67,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s4_l04",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "I've found errors in AI-generated math questions myself!",
+          "gapAfter": 0.6,
+          "action": "WRONG stamp at end of line",
+          "localStart": 162,
+          "startFrame": 2112,
+          "durationFrames": 76,
+          "durationSec": 2.509,
+          "audio": "audio/voice/s4_l04.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.09,
+              "value": "B"
+            },
+            {
+              "start": 0.09,
+              "end": 0.22,
+              "value": "G"
+            },
+            {
+              "start": 0.22,
+              "end": 0.29,
+              "value": "C"
+            },
+            {
+              "start": 0.29,
+              "end": 0.36,
+              "value": "B"
+            },
+            {
+              "start": 0.36,
+              "end": 0.43,
+              "value": "C"
+            },
+            {
+              "start": 0.43,
+              "end": 0.71,
+              "value": "B"
+            },
+            {
+              "start": 0.71,
+              "end": 0.78,
+              "value": "C"
+            },
+            {
+              "start": 0.78,
+              "end": 0.85,
+              "value": "B"
+            },
+            {
+              "start": 0.85,
+              "end": 0.92,
+              "value": "C"
+            },
+            {
+              "start": 0.92,
+              "end": 1.06,
+              "value": "B"
+            },
+            {
+              "start": 1.06,
+              "end": 1.13,
+              "value": "C"
+            },
+            {
+              "start": 1.13,
+              "end": 1.27,
+              "value": "E"
+            },
+            {
+              "start": 1.27,
+              "end": 1.41,
+              "value": "B"
+            },
+            {
+              "start": 1.41,
+              "end": 1.49,
+              "value": "A"
+            },
+            {
+              "start": 1.49,
+              "end": 1.6,
+              "value": "C"
+            },
+            {
+              "start": 1.6,
+              "end": 1.74,
+              "value": "B"
+            },
+            {
+              "start": 1.74,
+              "end": 1.81,
+              "value": "C"
+            },
+            {
+              "start": 1.81,
+              "end": 2.02,
+              "value": "B"
+            },
+            {
+              "start": 2.02,
+              "end": 2.1,
+              "value": "A"
+            },
+            {
+              "start": 2.1,
+              "end": 2.14,
+              "value": "C"
+            },
+            {
+              "start": 2.14,
+              "end": 2.25,
+              "value": "B"
+            },
+            {
+              "start": 2.25,
+              "end": 2.32,
+              "value": "C"
+            },
+            {
+              "start": 2.32,
+              "end": 2.46,
+              "value": "H"
+            },
+            {
+              "start": 2.46,
+              "end": 2.5,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s4_l05",
+          "speaker": "PROF",
+          "emotion": "stern",
+          "text": "Whoever uses the tool needs to check its work. Students and professors both have responsibilities.",
+          "localStart": 255,
+          "startFrame": 2205,
+          "durationFrames": 129,
+          "durationSec": 4.279,
+          "audio": "audio/voice/s4_l05.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.1,
+              "value": "F"
+            },
+            {
+              "start": 0.1,
+              "end": 0.17,
+              "value": "C"
+            },
+            {
+              "start": 0.17,
+              "end": 0.24,
+              "value": "G"
+            },
+            {
+              "start": 0.24,
+              "end": 0.31,
+              "value": "E"
+            },
+            {
+              "start": 0.31,
+              "end": 0.45,
+              "value": "F"
+            },
+            {
+              "start": 0.45,
+              "end": 0.59,
+              "value": "B"
+            },
+            {
+              "start": 0.59,
+              "end": 0.87,
+              "value": "F"
+            },
+            {
+              "start": 0.87,
+              "end": 0.94,
+              "value": "B"
+            },
+            {
+              "start": 0.94,
+              "end": 1.18,
+              "value": "F"
+            },
+            {
+              "start": 1.18,
+              "end": 1.27,
+              "value": "B"
+            },
+            {
+              "start": 1.27,
+              "end": 1.34,
+              "value": "C"
+            },
+            {
+              "start": 1.34,
+              "end": 1.55,
+              "value": "B"
+            },
+            {
+              "start": 1.55,
+              "end": 1.62,
+              "value": "F"
+            },
+            {
+              "start": 1.62,
+              "end": 1.69,
+              "value": "E"
+            },
+            {
+              "start": 1.69,
+              "end": 1.99,
+              "value": "C"
+            },
+            {
+              "start": 1.99,
+              "end": 2.1,
+              "value": "B"
+            },
+            {
+              "start": 2.1,
+              "end": 2.31,
+              "value": "F"
+            },
+            {
+              "start": 2.31,
+              "end": 2.45,
+              "value": "B"
+            },
+            {
+              "start": 2.45,
+              "end": 2.6,
+              "value": "A"
+            },
+            {
+              "start": 2.6,
+              "end": 2.65,
+              "value": "B"
+            },
+            {
+              "start": 2.65,
+              "end": 2.69,
+              "value": "C"
+            },
+            {
+              "start": 2.69,
+              "end": 2.76,
+              "value": "G"
+            },
+            {
+              "start": 2.76,
+              "end": 2.83,
+              "value": "C"
+            },
+            {
+              "start": 2.83,
+              "end": 2.9,
+              "value": "B"
+            },
+            {
+              "start": 2.9,
+              "end": 2.97,
+              "value": "E"
+            },
+            {
+              "start": 2.97,
+              "end": 3.05,
+              "value": "B"
+            },
+            {
+              "start": 3.05,
+              "end": 3.1,
+              "value": "A"
+            },
+            {
+              "start": 3.1,
+              "end": 3.17,
+              "value": "E"
+            },
+            {
+              "start": 3.17,
+              "end": 3.24,
+              "value": "F"
+            },
+            {
+              "start": 3.24,
+              "end": 3.31,
+              "value": "B"
+            },
+            {
+              "start": 3.31,
+              "end": 3.38,
+              "value": "C"
+            },
+            {
+              "start": 3.38,
+              "end": 3.45,
+              "value": "B"
+            },
+            {
+              "start": 3.45,
+              "end": 3.53,
+              "value": "A"
+            },
+            {
+              "start": 3.53,
+              "end": 3.66,
+              "value": "D"
+            },
+            {
+              "start": 3.66,
+              "end": 3.73,
+              "value": "B"
+            },
+            {
+              "start": 3.73,
+              "end": 3.81,
+              "value": "A"
+            },
+            {
+              "start": 3.81,
+              "end": 4.26,
+              "value": "B"
+            },
+            {
+              "start": 4.26,
+              "end": 4.27,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s4_l06",
+          "speaker": "BOT",
+          "emotion": "sad",
+          "text": "ERROR DETECTED. EGO DEFLATED.",
+          "ttsText": "Error detected. Ego... deflated.",
+          "localStart": 393,
+          "startFrame": 2343,
+          "durationFrames": 27,
+          "durationSec": 0.885,
+          "audio": "audio/voice/s4_l06.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.1,
+              "value": "X"
+            },
+            {
+              "start": 0.1,
+              "end": 0.29,
+              "value": "B"
+            },
+            {
+              "start": 0.29,
+              "end": 0.43,
+              "value": "X"
+            },
+            {
+              "start": 0.43,
+              "end": 0.55,
+              "value": "B"
+            },
+            {
+              "start": 0.55,
+              "end": 0.83,
+              "value": "C"
+            },
+            {
+              "start": 0.83,
+              "end": 0.88,
+              "value": "X"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The Experiment",
+      "startFrame": 2550,
+      "endFrame": 3150,
+      "background": "lab",
+      "leadIn": 0.9,
+      "tailOut": 0.4,
+      "gap": 0.25,
+      "lines": [
+        {
+          "id": "s5_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "What would convince you to try our AI assistant?",
+          "localStart": 27,
+          "startFrame": 2577,
+          "durationFrames": 63,
+          "durationSec": 2.092,
+          "audio": "audio/voice/s5_l01.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.13,
+              "value": "X"
+            },
+            {
+              "start": 0.13,
+              "end": 0.17,
+              "value": "F"
+            },
+            {
+              "start": 0.17,
+              "end": 0.42,
+              "value": "B"
+            },
+            {
+              "start": 0.42,
+              "end": 0.49,
+              "value": "G"
+            },
+            {
+              "start": 0.49,
+              "end": 0.63,
+              "value": "B"
+            },
+            {
+              "start": 0.63,
+              "end": 0.7,
+              "value": "A"
+            },
+            {
+              "start": 0.7,
+              "end": 0.86,
+              "value": "F"
+            },
+            {
+              "start": 0.86,
+              "end": 1,
+              "value": "B"
+            },
+            {
+              "start": 1,
+              "end": 1.07,
+              "value": "C"
+            },
+            {
+              "start": 1.07,
+              "end": 1.14,
+              "value": "B"
+            },
+            {
+              "start": 1.14,
+              "end": 1.21,
+              "value": "D"
+            },
+            {
+              "start": 1.21,
+              "end": 1.28,
+              "value": "C"
+            },
+            {
+              "start": 1.28,
+              "end": 1.35,
+              "value": "B"
+            },
+            {
+              "start": 1.35,
+              "end": 1.49,
+              "value": "C"
+            },
+            {
+              "start": 1.49,
+              "end": 1.77,
+              "value": "B"
+            },
+            {
+              "start": 1.77,
+              "end": 1.91,
+              "value": "C"
+            },
+            {
+              "start": 1.91,
+              "end": 1.98,
+              "value": "B"
+            },
+            {
+              "start": 1.98,
+              "end": 2.09,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s5_l02",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "If it helps students understand vocabulary, interpret problems, and get more out of class.",
+          "localStart": 97,
+          "startFrame": 2647,
+          "durationFrames": 125,
+          "durationSec": 4.135,
+          "audio": "audio/voice/s5_l02.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.08,
+              "value": "B"
+            },
+            {
+              "start": 0.08,
+              "end": 0.12,
+              "value": "G"
+            },
+            {
+              "start": 0.12,
+              "end": 0.19,
+              "value": "B"
+            },
+            {
+              "start": 0.19,
+              "end": 0.26,
+              "value": "C"
+            },
+            {
+              "start": 0.26,
+              "end": 0.34,
+              "value": "A"
+            },
+            {
+              "start": 0.34,
+              "end": 0.59,
+              "value": "F"
+            },
+            {
+              "start": 0.59,
+              "end": 0.73,
+              "value": "C"
+            },
+            {
+              "start": 0.73,
+              "end": 0.8,
+              "value": "B"
+            },
+            {
+              "start": 0.8,
+              "end": 0.87,
+              "value": "C"
+            },
+            {
+              "start": 0.87,
+              "end": 0.94,
+              "value": "B"
+            },
+            {
+              "start": 0.94,
+              "end": 1.01,
+              "value": "E"
+            },
+            {
+              "start": 1.01,
+              "end": 1.08,
+              "value": "B"
+            },
+            {
+              "start": 1.08,
+              "end": 1.15,
+              "value": "C"
+            },
+            {
+              "start": 1.15,
+              "end": 1.36,
+              "value": "B"
+            },
+            {
+              "start": 1.36,
+              "end": 1.5,
+              "value": "C"
+            },
+            {
+              "start": 1.5,
+              "end": 1.64,
+              "value": "B"
+            },
+            {
+              "start": 1.64,
+              "end": 1.78,
+              "value": "E"
+            },
+            {
+              "start": 1.78,
+              "end": 2,
+              "value": "B"
+            },
+            {
+              "start": 2,
+              "end": 2.06,
+              "value": "C"
+            },
+            {
+              "start": 2.06,
+              "end": 2.53,
+              "value": "B"
+            },
+            {
+              "start": 2.53,
+              "end": 2.6,
+              "value": "C"
+            },
+            {
+              "start": 2.6,
+              "end": 3.04,
+              "value": "B"
+            },
+            {
+              "start": 3.04,
+              "end": 3.18,
+              "value": "C"
+            },
+            {
+              "start": 3.18,
+              "end": 3.25,
+              "value": "B"
+            },
+            {
+              "start": 3.25,
+              "end": 3.33,
+              "value": "A"
+            },
+            {
+              "start": 3.33,
+              "end": 3.4,
+              "value": "E"
+            },
+            {
+              "start": 3.4,
+              "end": 3.53,
+              "value": "B"
+            },
+            {
+              "start": 3.53,
+              "end": 3.6,
+              "value": "C"
+            },
+            {
+              "start": 3.6,
+              "end": 3.67,
+              "value": "B"
+            },
+            {
+              "start": 3.67,
+              "end": 3.74,
+              "value": "C"
+            },
+            {
+              "start": 3.74,
+              "end": 3.88,
+              "value": "H"
+            },
+            {
+              "start": 3.88,
+              "end": 4.02,
+              "value": "C"
+            },
+            {
+              "start": 4.02,
+              "end": 4.09,
+              "value": "B"
+            },
+            {
+              "start": 4.09,
+              "end": 4.13,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s5_l03",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "Would students have to use it?",
+          "localStart": 229,
+          "startFrame": 2779,
+          "durationFrames": 38,
+          "durationSec": 1.234,
+          "audio": "audio/voice/s5_l03.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.05,
+              "value": "X"
+            },
+            {
+              "start": 0.05,
+              "end": 0.34,
+              "value": "H"
+            },
+            {
+              "start": 0.34,
+              "end": 0.48,
+              "value": "B"
+            },
+            {
+              "start": 0.48,
+              "end": 0.62,
+              "value": "C"
+            },
+            {
+              "start": 0.62,
+              "end": 0.9,
+              "value": "F"
+            },
+            {
+              "start": 0.9,
+              "end": 1.18,
+              "value": "B"
+            },
+            {
+              "start": 1.18,
+              "end": 1.23,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s5_l04",
+          "speaker": "PROF",
+          "emotion": "happy",
+          "text": "I'd give them a choice. Maybe even create a special AI assignment.",
+          "localStart": 273,
+          "startFrame": 2823,
+          "durationFrames": 93,
+          "durationSec": 3.09,
+          "audio": "audio/voice/s5_l04.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.35,
+              "value": "B"
+            },
+            {
+              "start": 0.35,
+              "end": 0.43,
+              "value": "A"
+            },
+            {
+              "start": 0.43,
+              "end": 0.59,
+              "value": "B"
+            },
+            {
+              "start": 0.59,
+              "end": 0.66,
+              "value": "E"
+            },
+            {
+              "start": 0.66,
+              "end": 1.16,
+              "value": "B"
+            },
+            {
+              "start": 1.16,
+              "end": 1.23,
+              "value": "C"
+            },
+            {
+              "start": 1.23,
+              "end": 1.51,
+              "value": "B"
+            },
+            {
+              "start": 1.51,
+              "end": 1.58,
+              "value": "G"
+            },
+            {
+              "start": 1.58,
+              "end": 2.28,
+              "value": "B"
+            },
+            {
+              "start": 2.28,
+              "end": 2.42,
+              "value": "H"
+            },
+            {
+              "start": 2.42,
+              "end": 2.49,
+              "value": "B"
+            },
+            {
+              "start": 2.49,
+              "end": 2.56,
+              "value": "C"
+            },
+            {
+              "start": 2.56,
+              "end": 2.77,
+              "value": "B"
+            },
+            {
+              "start": 2.77,
+              "end": 2.84,
+              "value": "D"
+            },
+            {
+              "start": 2.84,
+              "end": 2.98,
+              "value": "C"
+            },
+            {
+              "start": 2.98,
+              "end": 3.08,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s5_l05",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "OPTIONAL ROBOT HOMEWORK?! BEST DAY EVER!",
+          "ttsText": "Optional robot HOMEWORK?! Best day EVER!",
+          "gag": "censor",
+          "localStart": 374,
+          "startFrame": 2924,
+          "durationFrames": 34,
+          "durationSec": 1.125,
+          "audio": "audio/voice/s5_l05.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.04,
+              "value": "X"
+            },
+            {
+              "start": 0.04,
+              "end": 0.09,
+              "value": "B"
+            },
+            {
+              "start": 0.09,
+              "end": 0.32,
+              "value": "D"
+            },
+            {
+              "start": 0.32,
+              "end": 0.38,
+              "value": "C"
+            },
+            {
+              "start": 0.38,
+              "end": 0.76,
+              "value": "B"
+            },
+            {
+              "start": 0.76,
+              "end": 0.92,
+              "value": "E"
+            },
+            {
+              "start": 0.92,
+              "end": 1.06,
+              "value": "F"
+            },
+            {
+              "start": 1.06,
+              "end": 1.12,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s5_l06",
+          "speaker": "PROF",
+          "emotion": "amused",
+          "text": "With administration's approval, of course.",
+          "localStart": 415,
+          "startFrame": 2965,
+          "durationFrames": 56,
+          "durationSec": 1.859,
+          "audio": "audio/voice/s5_l06.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.17,
+              "value": "B"
+            },
+            {
+              "start": 0.17,
+              "end": 0.25,
+              "value": "A"
+            },
+            {
+              "start": 0.25,
+              "end": 0.51,
+              "value": "B"
+            },
+            {
+              "start": 0.51,
+              "end": 0.58,
+              "value": "C"
+            },
+            {
+              "start": 0.58,
+              "end": 0.79,
+              "value": "B"
+            },
+            {
+              "start": 0.79,
+              "end": 0.87,
+              "value": "A"
+            },
+            {
+              "start": 0.87,
+              "end": 1.05,
+              "value": "F"
+            },
+            {
+              "start": 1.05,
+              "end": 1.12,
+              "value": "G"
+            },
+            {
+              "start": 1.12,
+              "end": 1.19,
+              "value": "C"
+            },
+            {
+              "start": 1.19,
+              "end": 1.37,
+              "value": "H"
+            },
+            {
+              "start": 1.37,
+              "end": 1.42,
+              "value": "B"
+            },
+            {
+              "start": 1.42,
+              "end": 1.74,
+              "value": "E"
+            },
+            {
+              "start": 1.74,
+              "end": 1.81,
+              "value": "B"
+            },
+            {
+              "start": 1.81,
+              "end": 1.85,
+              "value": "X"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The Final Verdict",
+      "startFrame": 3150,
+      "endFrame": 3600,
+      "background": "stage",
+      "leadIn": 0.4,
+      "tailOut": 2.3,
+      "gap": 0.18,
+      "lines": [
+        {
+          "id": "s6_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "So… would you actually let us test it?",
+          "localStart": 12,
+          "startFrame": 3162,
+          "durationFrames": 55,
+          "durationSec": 1.815,
+          "audio": "audio/voice/s6_l01.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.1,
+              "value": "B"
+            },
+            {
+              "start": 0.1,
+              "end": 0.16,
+              "value": "E"
+            },
+            {
+              "start": 0.16,
+              "end": 0.23,
+              "value": "F"
+            },
+            {
+              "start": 0.23,
+              "end": 0.37,
+              "value": "B"
+            },
+            {
+              "start": 0.37,
+              "end": 0.86,
+              "value": "F"
+            },
+            {
+              "start": 0.86,
+              "end": 0.93,
+              "value": "C"
+            },
+            {
+              "start": 0.93,
+              "end": 1.28,
+              "value": "B"
+            },
+            {
+              "start": 1.28,
+              "end": 1.42,
+              "value": "C"
+            },
+            {
+              "start": 1.42,
+              "end": 1.77,
+              "value": "B"
+            },
+            {
+              "start": 1.77,
+              "end": 1.81,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s6_l02",
+          "speaker": "PROF",
+          "emotion": "happy",
+          "text": "Absolutely. I'd be happy to try it on a trial basis.",
+          "localStart": 72,
+          "startFrame": 3222,
+          "durationFrames": 78,
+          "durationSec": 2.567,
+          "audio": "audio/voice/s6_l02.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.01,
+              "value": "X"
+            },
+            {
+              "start": 0.01,
+              "end": 0.09,
+              "value": "A"
+            },
+            {
+              "start": 0.09,
+              "end": 0.14,
+              "value": "B"
+            },
+            {
+              "start": 0.14,
+              "end": 0.18,
+              "value": "C"
+            },
+            {
+              "start": 0.18,
+              "end": 0.32,
+              "value": "H"
+            },
+            {
+              "start": 0.32,
+              "end": 0.79,
+              "value": "B"
+            },
+            {
+              "start": 0.79,
+              "end": 1.18,
+              "value": "C"
+            },
+            {
+              "start": 1.18,
+              "end": 1.46,
+              "value": "B"
+            },
+            {
+              "start": 1.46,
+              "end": 1.53,
+              "value": "C"
+            },
+            {
+              "start": 1.53,
+              "end": 1.67,
+              "value": "B"
+            },
+            {
+              "start": 1.67,
+              "end": 1.81,
+              "value": "D"
+            },
+            {
+              "start": 1.81,
+              "end": 2.09,
+              "value": "B"
+            },
+            {
+              "start": 2.09,
+              "end": 2.19,
+              "value": "C"
+            },
+            {
+              "start": 2.19,
+              "end": 2.55,
+              "value": "B"
+            },
+            {
+              "start": 2.55,
+              "end": 2.56,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s6_l03",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "YES! I'M HIRED!",
+          "ttsText": "YES! I'm HIRED!",
+          "gapAfter": 0.1,
+          "localStart": 154,
+          "startFrame": 3304,
+          "durationFrames": 17,
+          "durationSec": 0.563,
+          "audio": "audio/voice/s6_l03.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.27,
+              "value": "X"
+            },
+            {
+              "start": 0.27,
+              "end": 0.42,
+              "value": "D"
+            },
+            {
+              "start": 0.42,
+              "end": 0.49,
+              "value": "B"
+            },
+            {
+              "start": 0.49,
+              "end": 0.56,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s6_l04",
+          "speaker": "PROF",
+          "emotion": "skeptical",
+          "text": "You're assisting.",
+          "gapAfter": 0.1,
+          "localStart": 175,
+          "startFrame": 3325,
+          "durationFrames": 19,
+          "durationSec": 0.628,
+          "audio": "audio/voice/s6_l04.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.1,
+              "value": "F"
+            },
+            {
+              "start": 0.1,
+              "end": 0.58,
+              "value": "B"
+            },
+            {
+              "start": 0.58,
+              "end": 0.62,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s6_l05",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "PROMOTED TO ASSISTANT!",
+          "ttsText": "Promoted to ASSISTANT!",
+          "localStart": 197,
+          "startFrame": 3347,
+          "durationFrames": 15,
+          "durationSec": 0.49,
+          "audio": "audio/voice/s6_l05.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.2,
+              "value": "X"
+            },
+            {
+              "start": 0.2,
+              "end": 0.41,
+              "value": "F"
+            },
+            {
+              "start": 0.41,
+              "end": 0.49,
+              "value": "X"
+            }
+          ]
+        },
+        {
+          "id": "s6_l06",
+          "speaker": "KJ",
+          "emotion": "happy",
+          "text": "The future of math isn't humans versus AI. It's learning how to use both.",
+          "toCamera": true,
+          "action": "End card follows",
+          "localStart": 217,
+          "startFrame": 3367,
+          "durationFrames": 102,
+          "durationSec": 3.382,
+          "audio": "audio/voice/s6_l06.wav",
+          "mouthCues": [
+            {
+              "start": 0,
+              "end": 0.03,
+              "value": "X"
+            },
+            {
+              "start": 0.03,
+              "end": 0.08,
+              "value": "B"
+            },
+            {
+              "start": 0.08,
+              "end": 0.12,
+              "value": "G"
+            },
+            {
+              "start": 0.12,
+              "end": 0.26,
+              "value": "F"
+            },
+            {
+              "start": 0.26,
+              "end": 0.33,
+              "value": "B"
+            },
+            {
+              "start": 0.33,
+              "end": 0.4,
+              "value": "E"
+            },
+            {
+              "start": 0.4,
+              "end": 0.47,
+              "value": "C"
+            },
+            {
+              "start": 0.47,
+              "end": 0.55,
+              "value": "A"
+            },
+            {
+              "start": 0.55,
+              "end": 0.62,
+              "value": "C"
+            },
+            {
+              "start": 0.62,
+              "end": 0.83,
+              "value": "B"
+            },
+            {
+              "start": 0.83,
+              "end": 1.04,
+              "value": "F"
+            },
+            {
+              "start": 1.04,
+              "end": 1.12,
+              "value": "A"
+            },
+            {
+              "start": 1.12,
+              "end": 1.29,
+              "value": "B"
+            },
+            {
+              "start": 1.29,
+              "end": 1.36,
+              "value": "E"
+            },
+            {
+              "start": 1.36,
+              "end": 1.57,
+              "value": "B"
+            },
+            {
+              "start": 1.57,
+              "end": 1.64,
+              "value": "C"
+            },
+            {
+              "start": 1.64,
+              "end": 1.71,
+              "value": "B"
+            },
+            {
+              "start": 1.71,
+              "end": 1.78,
+              "value": "C"
+            },
+            {
+              "start": 1.78,
+              "end": 1.85,
+              "value": "B"
+            },
+            {
+              "start": 1.85,
+              "end": 2.15,
+              "value": "X"
+            },
+            {
+              "start": 2.15,
+              "end": 2.54,
+              "value": "B"
+            },
+            {
+              "start": 2.54,
+              "end": 2.61,
+              "value": "C"
+            },
+            {
+              "start": 2.61,
+              "end": 2.97,
+              "value": "F"
+            },
+            {
+              "start": 2.97,
+              "end": 3.03,
+              "value": "A"
+            },
+            {
+              "start": 3.03,
+              "end": 3.13,
+              "value": "E"
+            },
+            {
+              "start": 3.13,
+              "end": 3.27,
+              "value": "F"
+            },
+            {
+              "start": 3.27,
+              "end": 3.38,
+              "value": "X"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

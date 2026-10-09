@@ -8,15 +8,16 @@
   "dependencies": {
     "@react-three/fiber": "9.2.0",
     "@remotion/cli": "4.0.534",
+    "@remotion/google-fonts": "4.0.534",
     "@remotion/media": "4.0.534",
     "@remotion/three": "4.0.534",
     "@remotion/zod-types": "4.0.534",
+    "mediabunny": "1.56.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.534",
     "three": "0.178.0",
-    "zod": "4.5.4",
-    "mediabunny": "1.56.1"
+    "zod": "4.5.4"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.534",
@@ -31,6 +32,19 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "doctor": "node scripts/doctor.mjs",
+    "script:check": "node scripts/validate-script.mjs",
+    "voices": "node scripts/voice.mjs",
+    "lipsync": "node scripts/lipsync.mjs",
+    "timing": "node scripts/timing.mjs",
+    "audio": "node scripts/audio.mjs",
+    "manim": "bash scripts/manim/render.sh",
+    "produce:audio": "npm run script:check && npm run voices && npm run lipsync && npm run timing",
+    "qa:pre": "node scripts/qa.mjs pre",
+    "previews": "bash scripts/previews.sh",
+    "render": "remotion render Main out/final.mp4 --codec=h264 --pixel-format=yuv420p --audio-codec=aac --crf=18 --concurrency=50%",
+    "qa:post": "node scripts/qa.mjs post out/final.mp4",
+    "produce": "npm run produce:audio && npm run qa:pre && npm run render && npm run qa:post"
   }
 }

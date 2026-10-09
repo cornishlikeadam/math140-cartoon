@@ -1,56 +1,69 @@
-import { Composition, staticFile } from "remotion";
-import { Scene, myCompSchema } from "./Scene";
-import { getMediaMetadata } from "./helpers/get-media-metadata";
-
-// Welcome to the Remotion Three Starter Kit!
-// Two compositions have been created, showing how to use
-// the `ThreeCanvas` component and the `useVideoTexture` hook.
-
-// You can play around with the example or delete everything inside the canvas.
-
-// Remotion Docs:
-// https://remotion.dev/docs
-
-// @remotion/three Docs:
-// https://remotion.dev/docs/three
-
-// React Three Fiber Docs:
-// https://docs.pmnd.rs/react-three-fiber/getting-started/introduction
+import React from "react";
+import { Composition } from "remotion";
+import { Main } from "./Main";
+import { Scene1, Scene2, Scene3, Scene4, Scene5, Scene6 } from "./scenes";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* Complete 120-Second Animated Short (3,600 frames @ 30 FPS) */}
       <Composition
-        id="Scene"
-        component={Scene}
+        id="Main"
+        component={Main}
+        durationInFrames={3600}
         fps={30}
-        durationInFrames={300}
-        width={1280}
-        height={720}
-        schema={myCompSchema}
-        defaultProps={{
-          deviceType: "phone",
-          phoneColor: "rgb(110, 152, 191)" as const,
-          baseScale: 1,
-          mediaMetadata: null,
-          videoSrc: null,
-        }}
-        calculateMetadata={async ({ props }) => {
-          const videoSrc =
-            props.deviceType === "phone"
-              ? staticFile("phone.mp4")
-              : staticFile("tablet.mp4");
+        width={1920}
+        height={1080}
+      />
 
-          const mediaMetadata = await getMediaMetadata(videoSrc);
-
-          return {
-            props: {
-              ...props,
-              mediaMetadata,
-              videoSrc,
-            },
-          };
-        }}
+      {/* Per-Scene Preview Compositions */}
+      <Composition
+        id="Scene1"
+        component={Scene1}
+        durationInFrames={450}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Scene2"
+        component={Scene2}
+        durationInFrames={900}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Scene3"
+        component={Scene3}
+        durationInFrames={600}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Scene4"
+        component={Scene4}
+        durationInFrames={600}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Scene5"
+        component={Scene5}
+        durationInFrames={600}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Scene6"
+        component={Scene6}
+        durationInFrames={450}
+        fps={30}
+        width={1920}
+        height={1080}
       />
     </>
   );

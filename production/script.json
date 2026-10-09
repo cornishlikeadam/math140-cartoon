@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "title": "Math 140 — AI vs. the Human Brain",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "durationInFrames": 3600
+  },
+  "characters": {
+    "KJ": {
+      "name": "KJ",
+      "role": "Energetic college student and interviewer",
+      "voice": {
+        "elevenlabs": "TX3LPaxmHKxFdv7VOQHJ",
+        "elevenlabsName": "Liam",
+        "settings": { "stability": 0.35, "style": 0.55, "speed": 1.12 },
+        "openai": "verse",
+        "say": "Eddy (English (US))",
+        "direction": "Young, upbeat college student hosting a fun interview."
+      },
+      "fx": "none",
+      "emotions": ["neutral", "excited", "curious", "surprised", "happy", "thinking"]
+    },
+    "PROF": {
+      "name": "Professor",
+      "role": "Intelligent, approachable, mildly sarcastic math instructor",
+      "voice": {
+        "elevenlabs": "nPczCvzR6IEnmW1Hk9YZ",
+        "elevenlabsName": "Brian",
+        "settings": { "stability": 0.45, "style": 0.4, "speed": 1.08 },
+        "openai": "ash",
+        "say": "Fred",
+        "direction": "Warm, witty math professor with dry, mildly sarcastic delivery."
+      },
+      "fx": "none",
+      "emotions": ["neutral", "skeptical", "amused", "stern", "happy", "explaining"]
+    },
+    "BOT": {
+      "name": "B.O.T.",
+      "role": "Enthusiastic floating robot with an animated digital face",
+      "voice": {
+        "elevenlabs": "IKne3meq5aSn9XLyUdCD",
+        "elevenlabsName": "Charlie",
+        "settings": { "stability": 0.25, "style": 0.75, "speed": 1.15 },
+        "openai": "fable",
+        "say": "Junior",
+        "direction": "Hyper-excited cartoon robot, over-the-top enthusiasm."
+      },
+      "fx": "robot",
+      "emotions": ["happy", "excited", "smug", "shocked", "sad", "glitch"]
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "The Big Question",
+      "startFrame": 0,
+      "endFrame": 450,
+      "background": "classroom",
+      "leadIn": 0.7,
+      "tailOut": 2.4,
+      "gap": 0.3,
+      "lines": [
+        {
+          "id": "s1_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "What if artificial intelligence could help you pass math… without doing your homework for you?",
+          "gapAfter": 0.75,
+          "sfxAfter": ["boing", "impact"],
+          "action": "BOT crashes through the ceiling right after this line"
+        },
+        {
+          "id": "s1_l02",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "DID SOMEBODY SAY HOMEWORK?! I CAN SOLVE EVERYTHING!",
+          "ttsText": "Did somebody say HOMEWORK?! I can solve EVERYTHING!",
+          "gapAfter": 0.2
+        },
+        {
+          "id": "s1_l03",
+          "speaker": "PROF",
+          "emotion": "skeptical",
+          "text": "Everything? That's exactly what worries me.",
+          "action": "Title card slams in after this line"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The Five Rules",
+      "startFrame": 450,
+      "endFrame": 1350,
+      "background": "stage",
+      "leadIn": 0.5,
+      "tailOut": 0.4,
+      "gap": 0.22,
+      "lines": [
+        { "id": "s2_l01", "speaker": "KJ", "emotion": "excited", "text": "We're building an AI assistant for Math 140. But we've got five rules!", "ttsText": "We're building an AI assistant for Math one-forty. But we've got five rules!" },
+        { "id": "s2_l02", "speaker": "PROF", "emotion": "amused", "text": "Let's hear them." },
+        { "id": "s2_l03", "speaker": "KJ", "emotion": "excited", "text": "One! Students construct their own shapes.", "rule": 1, "gapAfter": 0.15 },
+        { "id": "s2_l04", "speaker": "KJ", "emotion": "excited", "text": "Two! They write their own proofs.", "rule": 2, "gapAfter": 0.1 },
+        { "id": "s2_l05", "speaker": "BOT", "emotion": "smug", "text": "But I know a thousand proofs!", "gag": "censor" },
+        { "id": "s2_l06", "speaker": "PROF", "emotion": "explaining", "text": "Great! Show examples. Don't do their work." },
+        { "id": "s2_l07", "speaker": "KJ", "emotion": "excited", "text": "Three! AI can give hints, but never the answer.", "rule": 3, "gag": "censor" },
+        { "id": "s2_l08", "speaker": "PROF", "emotion": "stern", "text": "Careful! There's a fine line between giving a hint and fixing the problem." },
+        { "id": "s2_l09", "speaker": "KJ", "emotion": "excited", "text": "Four! Students explain their own work.", "rule": 4, "gapAfter": 0.15 },
+        { "id": "s2_l10", "speaker": "KJ", "emotion": "excited", "text": "Five! No AI during quizzes!", "rule": 5 },
+        { "id": "s2_l11", "speaker": "BOT", "emotion": "sad", "text": "So… I'm basically a tutor with a mute button?" },
+        { "id": "s2_l12", "speaker": "PROF", "emotion": "amused", "text": "Now you're getting it." }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Where Students Struggle",
+      "startFrame": 1350,
+      "endFrame": 1950,
+      "background": "study",
+      "leadIn": 0.6,
+      "tailOut": 0.4,
+      "gap": 0.28,
+      "lines": [
+        { "id": "s3_l01", "speaker": "KJ", "emotion": "curious", "text": "Where do students struggle most?" },
+        { "id": "s3_l02", "speaker": "PROF", "emotion": "explaining", "text": "Vocabulary. Interpretation. Understanding what the mathematics actually means.", "action": "Equation morphs into alien symbols" },
+        { "id": "s3_l03", "speaker": "BOT", "emotion": "excited", "text": "I CAN TRANSLATE MATH INTO HUMAN!", "ttsText": "I can translate MATH into HUMAN!", "action": "Alien symbols morph into illustrated explanation" },
+        { "id": "s3_l04", "speaker": "PROF", "emotion": "happy", "text": "That's useful! AI can guide students. But understanding the answer is their responsibility." },
+        { "id": "s3_l05", "speaker": "KJ", "emotion": "thinking", "text": "So the goal isn't just getting the answer?" },
+        { "id": "s3_l06", "speaker": "PROF", "emotion": "explaining", "text": "Exactly. It's knowing what the answer means." }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "When AI Gets It Wrong",
+      "startFrame": 1950,
+      "endFrame": 2550,
+      "background": "classroom",
+      "leadIn": 1.3,
+      "tailOut": 0.5,
+      "gap": 0.3,
+      "lines": [
+        { "id": "s4_l01", "speaker": "BOT", "emotion": "smug", "text": "MATHEMATICAL GENIUS!", "ttsText": "Mathematical GENIUS!", "action": "2 + 2 = 5 on screen, confetti" },
+        { "id": "s4_l02", "speaker": "PROF", "emotion": "stern", "text": "Absolutely not.", "gapAfter": 0.55, "sfxAfter": ["scratch"] },
+        { "id": "s4_l03", "speaker": "KJ", "emotion": "curious", "text": "What happens when AI makes mistakes?" },
+        { "id": "s4_l04", "speaker": "PROF", "emotion": "explaining", "text": "I've found errors in AI-generated math questions myself!", "gapAfter": 0.6, "action": "WRONG stamp at end of line" },
+        { "id": "s4_l05", "speaker": "PROF", "emotion": "stern", "text": "Whoever uses the tool needs to check its work. Students and professors both have responsibilities." },
+        { "id": "s4_l06", "speaker": "BOT", "emotion": "sad", "text": "ERROR DETECTED. EGO DEFLATED.", "ttsText": "Error detected. Ego... deflated." }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The Experiment",
+      "startFrame": 2550,
+      "endFrame": 3150,
+      "background": "lab",
+      "leadIn": 0.9,
+      "tailOut": 0.4,
+      "gap": 0.25,
+      "lines": [
+        { "id": "s5_l01", "speaker": "KJ", "emotion": "curious", "text": "What would convince you to try our AI assistant?" },
+        { "id": "s5_l02", "speaker": "PROF", "emotion": "explaining", "text": "If it helps students understand vocabulary, interpret problems, and get more out of class." },
+        { "id": "s5_l03", "speaker": "KJ", "emotion": "curious", "text": "Would students have to use it?" },
+        { "id": "s5_l04", "speaker": "PROF", "emotion": "happy", "text": "I'd give them a choice. Maybe even create a special AI assignment." },
+        { "id": "s5_l05", "speaker": "BOT", "emotion": "excited", "text": "OPTIONAL ROBOT HOMEWORK?! BEST DAY EVER!", "ttsText": "Optional robot HOMEWORK?! Best day EVER!", "gag": "censor" },
+        { "id": "s5_l06", "speaker": "PROF", "emotion": "amused", "text": "With administration's approval, of course." }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The Final Verdict",
+      "startFrame": 3150,
+      "endFrame": 3600,
+      "background": "stage",
+      "leadIn": 0.4,
+      "tailOut": 2.3,
+      "gap": 0.18,
+      "lines": [
+        { "id": "s6_l01", "speaker": "KJ", "emotion": "curious", "text": "So… would you actually let us test it?" },
+        { "id": "s6_l02", "speaker": "PROF", "emotion": "happy", "text": "Absolutely. I'd be happy to try it on a trial basis." },
+        { "id": "s6_l03", "speaker": "BOT", "emotion": "excited", "text": "YES! I'M HIRED!", "ttsText": "YES! I'm HIRED!", "gapAfter": 0.1 },
+        { "id": "s6_l04", "speaker": "PROF", "emotion": "skeptical", "text": "You're assisting.", "gapAfter": 0.1 },
+        { "id": "s6_l05", "speaker": "BOT", "emotion": "excited", "text": "PROMOTED TO ASSISTANT!", "ttsText": "Promoted to ASSISTANT!" },
+        { "id": "s6_l06", "speaker": "KJ", "emotion": "happy", "text": "The future of math isn't humans versus AI. It's learning how to use both.", "toCamera": true, "action": "End card follows" }
+      ]
+    }
+  ]
+}
