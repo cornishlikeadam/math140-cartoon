@@ -16,6 +16,19 @@ Inspired by early-2000s American Saturday morning television animation with hand
 
 ---
 
+## 📺 Visual Preview & Contact Sheet
+
+![Math 140 Animation Contact Sheet](docs/contact-sheet.png)
+
+### Scene Gallery
+| Scene 1: The Big Question (0:00–0:15) | Scene 2: The Five Rules (0:15–0:45) | Scene 3: Where Students Struggle (0:45–1:05) |
+| :---: | :---: | :---: |
+| ![Scene 1](docs/previews/scene1.png) | ![Scene 2](docs/previews/scene2.png) | ![Scene 3](docs/previews/scene3.png) |
+| **Scene 4: When AI Gets It Wrong (1:05–1:25)** | **Scene 5: The Experiment (1:25–1:45)** | **Scene 6: The Final Verdict (1:45–2:00)** |
+| ![Scene 4](docs/previews/scene4.png) | ![Scene 5](docs/previews/scene5.png) | ![Scene 6](docs/previews/scene6.png) |
+
+---
+
 ## 🏗 Six Production Stages (`cartoon-producer` Skill)
 
 The workflow is governed by the `cartoon-producer` skill located in `.agents/skills/cartoon-producer/SKILL.md`:
