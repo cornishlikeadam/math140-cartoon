@@ -7,3 +7,7 @@ dist
 out
 __pycache__/
 *.pyc
+
+# HyperFrames caches, build artifacts and local preview state.
+.hyperframes/
+.thumbnails/

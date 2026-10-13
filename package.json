@@ -1,7 +1,7 @@
 {
   "name": "math140-cartoon",
   "version": "1.0.0",
-  "description": "A React Three Fiber Project",
+  "description": "Math 140: friendly anime cartoon v2 with VoiceStudio and reusable multi-engine production assets",
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
@@ -43,8 +43,20 @@
     "produce:audio": "npm run script:check && npm run voices && npm run lipsync && npm run timing",
     "qa:pre": "node scripts/qa.mjs pre",
     "previews": "bash scripts/previews.sh",
-    "render": "remotion render Main out/final.mp4 --codec=h264 --pixel-format=yuv420p --audio-codec=aac --crf=18 --concurrency=50%",
+    "render": "npm run v2:render",
     "qa:post": "node scripts/qa.mjs post out/final.mp4",
-    "produce": "npm run produce:audio && npm run qa:pre && npm run render && npm run qa:post"
+    "produce": "npm run v2:audio && npm run v2:export && npm run v2:render",
+    "v2:script:check": "MATH140_EDITION=v2 node scripts/validate-script.mjs",
+    "v2:voices": "MATH140_EDITION=v2 TTS_PROVIDER=voicestudio node scripts/voice.mjs",
+    "v2:lipsync": "MATH140_EDITION=v2 node scripts/lipsync.mjs",
+    "v2:timing": "MATH140_EDITION=v2 node scripts/timing.mjs",
+    "v2:audio": "npm run v2:script:check && npm run v2:voices && npm run v2:lipsync && npm run v2:timing",
+    "v2:check": "node scripts/v2/check.mjs",
+    "v2:export": "node scripts/v2/export.mjs",
+    "v2:render": "node scripts/v2/check.mjs --require-audio && remotion render FriendlyV2 out/v2/final.mp4 --codec=h264 --pixel-format=yuv420p --audio-codec=aac --crf=18",
+    "render:legacy": "remotion render Main out/final.mp4 --codec=h264 --pixel-format=yuv420p --audio-codec=aac --crf=18 --concurrency=50%",
+    "produce:legacy": "npm run produce:audio && npm run qa:pre && npm run render:legacy && npm run qa:post",
+    "v2:qa:post": "MATH140_EDITION=v2 node scripts/qa.mjs post out/v2/final.mp4",
+    "v2:test:voice": "node scripts/v2/voice.test.mjs"
   }
 }

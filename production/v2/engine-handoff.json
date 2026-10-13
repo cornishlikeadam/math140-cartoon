@@ -1,0 +1,85 @@
+{
+  "edition": "v2",
+  "status": "visual-review-voice-pending",
+  "script": "production/v2/script.json",
+  "timeline": "src/v2/timeline.json",
+  "artwork": "public/art/v2",
+  "runtime": {
+    "remotion": "FriendlyV2",
+    "hyperframes": "videos/friendly-v2/index.html"
+  },
+  "voice": {
+    "repository": "https://github.com/debpalash/VoiceStudio",
+    "endpoint": "http://127.0.0.1:3900/v1",
+    "profileRecipes": {
+      "KJ": {
+        "name": "KJ",
+        "role": "Curious, welcoming college student",
+        "voice": {
+          "voicestudio": null,
+          "design": "male, young adult, moderate pitch, american accent",
+          "direction": "Warm, curious conversational energy; natural pauses, never announcer shouting."
+        },
+        "fx": "none",
+        "emotions": [
+          "neutral",
+          "excited",
+          "curious",
+          "surprised",
+          "happy",
+          "thinking"
+        ]
+      },
+      "PROF": {
+        "name": "Professor",
+        "role": "Patient and encouraging math mentor",
+        "voice": {
+          "voicestudio": null,
+          "design": "male, elderly, low pitch, american accent",
+          "direction": "Calm encouraging mentor; kindly humor, no condescension or sarcasm."
+        },
+        "fx": "none",
+        "emotions": [
+          "neutral",
+          "skeptical",
+          "amused",
+          "stern",
+          "happy",
+          "explaining"
+        ]
+      },
+      "BOT": {
+        "name": "B.O.T.",
+        "role": "Cheerful and honest tutoring sidekick",
+        "voice": {
+          "voicestudio": null,
+          "design": "female, young adult, high pitch, american accent",
+          "direction": "Bright curious sidekick; light playful delivery, intelligible and never screeching."
+        },
+        "fx": "none",
+        "emotions": [
+          "happy",
+          "excited",
+          "smug",
+          "shocked",
+          "sad",
+          "glitch"
+        ]
+      }
+    }
+  },
+  "openMontage": {
+    "repository": "https://github.com/calesthio/OpenMontage",
+    "localPathHint": "/Users/kjcornish/OpenMontage",
+    "pipeline": "character-animation",
+    "packetKind": "input-reference-not-native-checkpoint",
+    "requiredNext": [
+      "Run pipeline preflight",
+      "Create rig plan and pose library",
+      "Finish VoiceStudio voices",
+      "Replace static sprite mouths with viseme layers",
+      "Generate gentle soundtrack",
+      "Measure and verify final timing"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "bot.png": {
+    "path": "public/art/v2/bot.png",
+    "sha256": "f982891d02312ab2e17d5d4139ad7014c98a362fde7f4e62aa1befeb96a0b95f"
+  },
+  "classroom.png": {
+    "path": "public/art/v2/classroom.png",
+    "sha256": "77fc07308371a71ad7a89f06a7546083fc69c0f53a60bb6dadc56804dac5910f"
+  },
+  "kj.png": {
+    "path": "public/art/v2/kj.png",
+    "sha256": "5ae344285c382a151f292b1db363e2f383b69b1159a190e6c95600ed5a4a9674"
+  },
+  "lab.png": {
+    "path": "public/art/v2/lab.png",
+    "sha256": "f3534245c1527be170ffc982e36db1734b3061bde200407a3c99ea7cfa96a358"
+  },
+  "professor.png": {
+    "path": "public/art/v2/professor.png",
+    "sha256": "57d23461e3463b09b89ef2d56b1718240edbea7d339c7153246e079eec13d882"
+  },
+  "stage.png": {
+    "path": "public/art/v2/stage.png",
+    "sha256": "8d42e655c1b60ecde5df4af1fff9e7f4b9f1f33c6fbfc026042db05b0d6d9659"
+  },
+  "study.png": {
+    "path": "public/art/v2/study.png",
+    "sha256": "284fa3b4d7a7e639e9acd5ea4a155f5a2b02279f4f8e6f119956cbb18594ba1a"
+  }
+}

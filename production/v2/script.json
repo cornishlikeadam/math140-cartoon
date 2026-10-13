@@ -1,0 +1,396 @@
+{
+  "meta": {
+    "title": "Math 140 \u2014 Your Thinking, Your AI Sidekick",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "durationInFrames": 3600,
+    "edition": "v2",
+    "voiceProvider": "voicestudio"
+  },
+  "characters": {
+    "KJ": {
+      "name": "KJ",
+      "role": "Curious, welcoming college student",
+      "voice": {
+        "voicestudio": null,
+        "design": "male, young adult, moderate pitch, american accent",
+        "direction": "Warm, curious conversational energy; natural pauses, never announcer shouting."
+      },
+      "fx": "none",
+      "emotions": [
+        "neutral",
+        "excited",
+        "curious",
+        "surprised",
+        "happy",
+        "thinking"
+      ]
+    },
+    "PROF": {
+      "name": "Professor",
+      "role": "Patient and encouraging math mentor",
+      "voice": {
+        "voicestudio": null,
+        "design": "male, elderly, low pitch, american accent",
+        "direction": "Calm encouraging mentor; kindly humor, no condescension or sarcasm."
+      },
+      "fx": "none",
+      "emotions": [
+        "neutral",
+        "skeptical",
+        "amused",
+        "stern",
+        "happy",
+        "explaining"
+      ]
+    },
+    "BOT": {
+      "name": "B.O.T.",
+      "role": "Cheerful and honest tutoring sidekick",
+      "voice": {
+        "voicestudio": null,
+        "design": "female, young adult, high pitch, american accent",
+        "direction": "Bright curious sidekick; light playful delivery, intelligible and never screeching."
+      },
+      "fx": "none",
+      "emotions": [
+        "happy",
+        "excited",
+        "smug",
+        "shocked",
+        "sad",
+        "glitch"
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "The Big Question",
+      "startFrame": 0,
+      "endFrame": 375,
+      "background": "classroom",
+      "leadIn": 0.35,
+      "tailOut": 0.5,
+      "gap": 0.2,
+      "lines": [
+        {
+          "id": "s1_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "Could AI help us learn math, while we still do the thinking?",
+          "gapAfter": 0.35
+        },
+        {
+          "id": "s1_l02",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "I can be your study sidekick! Where do we start?",
+          "gapAfter": 0.18
+        },
+        {
+          "id": "s1_l03",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "With your questions. Learning is a team effort."
+        }
+      ],
+      "direction": "BOT floats into the classroom; welcoming nods."
+    },
+    {
+      "id": "s2",
+      "title": "The Five Rules",
+      "startFrame": 375,
+      "endFrame": 1380,
+      "background": "stage",
+      "leadIn": 0.25,
+      "tailOut": 0.35,
+      "gap": 0.16,
+      "lines": [
+        {
+          "id": "s2_l01",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Our Math one-forty sidekick has five ground rules."
+        },
+        {
+          "id": "s2_l02",
+          "speaker": "PROF",
+          "emotion": "amused",
+          "text": "Let\u2019s make them easy to remember."
+        },
+        {
+          "id": "s2_l03",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "One: build your own shapes.",
+          "rule": 1,
+          "gapAfter": 0.15
+        },
+        {
+          "id": "s2_l04",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Two: write your own proofs.",
+          "rule": 2,
+          "gapAfter": 0.1
+        },
+        {
+          "id": "s2_l05",
+          "speaker": "BOT",
+          "emotion": "happy",
+          "text": "Could I show a practice example?"
+        },
+        {
+          "id": "s2_l06",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "Yes! Then let the student try."
+        },
+        {
+          "id": "s2_l07",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Three: ask for hints, not finished answers.",
+          "rule": 3
+        },
+        {
+          "id": "s2_l08",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "A good hint helps you choose the next step."
+        },
+        {
+          "id": "s2_l09",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Four: explain your own reasoning.",
+          "rule": 4,
+          "gapAfter": 0.15
+        },
+        {
+          "id": "s2_l10",
+          "speaker": "KJ",
+          "emotion": "excited",
+          "text": "Five: quizzes are your solo mission.",
+          "rule": 5
+        },
+        {
+          "id": "s2_l11",
+          "speaker": "BOT",
+          "emotion": "happy",
+          "text": "Study buddy now. Cheerleader at quiz time!"
+        },
+        {
+          "id": "s2_l12",
+          "speaker": "PROF",
+          "emotion": "amused",
+          "text": "Exactly. You\u2019re here to help us learn."
+        }
+      ],
+      "direction": "Five readable rule cards; celebrate independent thinking."
+    },
+    {
+      "id": "s3",
+      "title": "Where Students Struggle",
+      "startFrame": 1380,
+      "endFrame": 1995,
+      "background": "study",
+      "leadIn": 0.25,
+      "tailOut": 0.35,
+      "gap": 0.18,
+      "lines": [
+        {
+          "id": "s3_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "What makes a math problem feel confusing?"
+        },
+        {
+          "id": "s3_l02",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "New words, tricky wording, and what the symbols mean."
+        },
+        {
+          "id": "s3_l03",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "Let\u2019s turn those symbols into a picture."
+        },
+        {
+          "id": "s3_l04",
+          "speaker": "PROF",
+          "emotion": "happy",
+          "text": "That can help. Then explain the idea in your own words."
+        },
+        {
+          "id": "s3_l05",
+          "speaker": "KJ",
+          "emotion": "thinking",
+          "text": "So understanding matters more than copying an answer?"
+        },
+        {
+          "id": "s3_l06",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "Yes. Make the meaning yours."
+        }
+      ],
+      "direction": "Show a triangle diagram with base and perpendicular height."
+    },
+    {
+      "id": "s4",
+      "title": "When AI Gets It Wrong",
+      "startFrame": 1995,
+      "endFrame": 2535,
+      "background": "classroom",
+      "leadIn": 0.3,
+      "tailOut": 0.35,
+      "gap": 0.18,
+      "lines": [
+        {
+          "id": "s4_l01",
+          "speaker": "BOT",
+          "emotion": "happy",
+          "text": "I got two plus two equals five. Wait\u2026"
+        },
+        {
+          "id": "s4_l02",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "Let\u2019s check it together.",
+          "gapAfter": 0.3
+        },
+        {
+          "id": "s4_l03",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "How do we catch an AI mistake?"
+        },
+        {
+          "id": "s4_l04",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "Try a small example. Count two, then two more.",
+          "gapAfter": 0.3
+        },
+        {
+          "id": "s4_l05",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "Four! Students and teachers both need to check AI\u2019s work."
+        },
+        {
+          "id": "s4_l06",
+          "speaker": "BOT",
+          "emotion": "happy",
+          "text": "Thanks! Checking beats guessing."
+        }
+      ],
+      "direction": "Count four dots together; correct the mistake kindly."
+    },
+    {
+      "id": "s5",
+      "title": "The Experiment",
+      "startFrame": 2535,
+      "endFrame": 3150,
+      "background": "lab",
+      "leadIn": 0.3,
+      "tailOut": 0.35,
+      "gap": 0.18,
+      "lines": [
+        {
+          "id": "s5_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "How could we test our study sidekick?"
+        },
+        {
+          "id": "s5_l02",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "See whether it helps with vocabulary, reading problems, and understanding."
+        },
+        {
+          "id": "s5_l03",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "Would everyone need to use it?"
+        },
+        {
+          "id": "s5_l04",
+          "speaker": "PROF",
+          "emotion": "happy",
+          "text": "We can offer a choice, with an approved practice activity."
+        },
+        {
+          "id": "s5_l05",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "A practice adventure! I\u2019m ready."
+        },
+        {
+          "id": "s5_l06",
+          "speaker": "PROF",
+          "emotion": "amused",
+          "text": "And we\u2019ll ask what helped, and what didn\u2019t."
+        }
+      ],
+      "direction": "Show a small optional pilot, not a proven research result."
+    },
+    {
+      "id": "s6",
+      "title": "The Final Verdict",
+      "startFrame": 3150,
+      "endFrame": 3600,
+      "background": "stage",
+      "leadIn": 0.25,
+      "tailOut": 0.5,
+      "gap": 0.16,
+      "lines": [
+        {
+          "id": "s6_l01",
+          "speaker": "KJ",
+          "emotion": "curious",
+          "text": "Would you try a small pilot?"
+        },
+        {
+          "id": "s6_l02",
+          "speaker": "PROF",
+          "emotion": "happy",
+          "text": "Yes. Let\u2019s learn from it together."
+        },
+        {
+          "id": "s6_l03",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "Study-sidekick mode: ready!",
+          "gapAfter": 0.1
+        },
+        {
+          "id": "s6_l04",
+          "speaker": "PROF",
+          "emotion": "explaining",
+          "text": "With students steering the thinking.",
+          "gapAfter": 0.1
+        },
+        {
+          "id": "s6_l05",
+          "speaker": "BOT",
+          "emotion": "excited",
+          "text": "I\u2019ll bring the hints. You bring the ideas."
+        },
+        {
+          "id": "s6_l06",
+          "speaker": "KJ",
+          "emotion": "happy",
+          "text": "Think first. Ask for help. Check the work. That\u2019s learning together.",
+          "toCamera": true
+        }
+      ],
+      "direction": "All three face the audience; end on learning together."
+    }
+  ]
+}
