@@ -15,7 +15,8 @@
         "elevenlabsName": "Liam",
         "settings": { "stability": 0.35, "style": 0.55, "speed": 1.12 },
         "openai": "verse",
-        "say": "Eddy (English (US))",
+        "say": "Reed (English (US))",
+        "sayRate": 192,
         "direction": "Young, upbeat college student hosting a fun interview."
       },
       "fx": "none",
@@ -29,7 +30,8 @@
         "elevenlabsName": "Brian",
         "settings": { "stability": 0.45, "style": 0.4, "speed": 1.08 },
         "openai": "ash",
-        "say": "Fred",
+        "say": "Daniel",
+        "sayRate": 186,
         "direction": "Warm, witty math professor with dry, mildly sarcastic delivery."
       },
       "fx": "none",
@@ -43,7 +45,8 @@
         "elevenlabsName": "Charlie",
         "settings": { "stability": 0.25, "style": 0.75, "speed": 1.15 },
         "openai": "fable",
-        "say": "Junior",
+        "say": "Rocko (English (US))",
+        "sayRate": 190,
         "direction": "Hyper-excited cartoon robot, over-the-top enthusiasm."
       },
       "fx": "robot",
@@ -55,18 +58,18 @@
       "id": "s1",
       "title": "The Big Question",
       "startFrame": 0,
-      "endFrame": 450,
+      "endFrame": 375,
       "background": "classroom",
-      "leadIn": 0.7,
-      "tailOut": 2.4,
-      "gap": 0.3,
+      "leadIn": 0.35,
+      "tailOut": 0.5,
+      "gap": 0.2,
       "lines": [
         {
           "id": "s1_l01",
           "speaker": "KJ",
           "emotion": "curious",
           "text": "What if artificial intelligence could help you pass math… without doing your homework for you?",
-          "gapAfter": 0.75,
+          "gapAfter": 0.35,
           "sfxAfter": ["boing", "impact"],
           "action": "BOT crashes through the ceiling right after this line"
         },
@@ -76,7 +79,7 @@
           "emotion": "excited",
           "text": "DID SOMEBODY SAY HOMEWORK?! I CAN SOLVE EVERYTHING!",
           "ttsText": "Did somebody say HOMEWORK?! I can solve EVERYTHING!",
-          "gapAfter": 0.2
+          "gapAfter": 0.18
         },
         {
           "id": "s1_l03",
@@ -90,12 +93,12 @@
     {
       "id": "s2",
       "title": "The Five Rules",
-      "startFrame": 450,
-      "endFrame": 1350,
+      "startFrame": 375,
+      "endFrame": 1380,
       "background": "stage",
-      "leadIn": 0.5,
-      "tailOut": 0.4,
-      "gap": 0.22,
+      "leadIn": 0.25,
+      "tailOut": 0.35,
+      "gap": 0.16,
       "lines": [
         { "id": "s2_l01", "speaker": "KJ", "emotion": "excited", "text": "We're building an AI assistant for Math 140. But we've got five rules!", "ttsText": "We're building an AI assistant for Math one-forty. But we've got five rules!" },
         { "id": "s2_l02", "speaker": "PROF", "emotion": "amused", "text": "Let's hear them." },
@@ -114,12 +117,12 @@
     {
       "id": "s3",
       "title": "Where Students Struggle",
-      "startFrame": 1350,
-      "endFrame": 1950,
+      "startFrame": 1380,
+      "endFrame": 1995,
       "background": "study",
-      "leadIn": 0.6,
-      "tailOut": 0.4,
-      "gap": 0.28,
+      "leadIn": 0.25,
+      "tailOut": 0.35,
+      "gap": 0.18,
       "lines": [
         { "id": "s3_l01", "speaker": "KJ", "emotion": "curious", "text": "Where do students struggle most?" },
         { "id": "s3_l02", "speaker": "PROF", "emotion": "explaining", "text": "Vocabulary. Interpretation. Understanding what the mathematics actually means.", "action": "Equation morphs into alien symbols" },
@@ -132,17 +135,17 @@
     {
       "id": "s4",
       "title": "When AI Gets It Wrong",
-      "startFrame": 1950,
-      "endFrame": 2550,
+      "startFrame": 1995,
+      "endFrame": 2535,
       "background": "classroom",
-      "leadIn": 1.3,
-      "tailOut": 0.5,
-      "gap": 0.3,
+      "leadIn": 0.3,
+      "tailOut": 0.35,
+      "gap": 0.18,
       "lines": [
         { "id": "s4_l01", "speaker": "BOT", "emotion": "smug", "text": "MATHEMATICAL GENIUS!", "ttsText": "Mathematical GENIUS!", "action": "2 + 2 = 5 on screen, confetti" },
-        { "id": "s4_l02", "speaker": "PROF", "emotion": "stern", "text": "Absolutely not.", "gapAfter": 0.55, "sfxAfter": ["scratch"] },
+        { "id": "s4_l02", "speaker": "PROF", "emotion": "stern", "text": "Absolutely not.", "gapAfter": 0.3, "sfxAfter": ["scratch"] },
         { "id": "s4_l03", "speaker": "KJ", "emotion": "curious", "text": "What happens when AI makes mistakes?" },
-        { "id": "s4_l04", "speaker": "PROF", "emotion": "explaining", "text": "I've found errors in AI-generated math questions myself!", "gapAfter": 0.6, "action": "WRONG stamp at end of line" },
+        { "id": "s4_l04", "speaker": "PROF", "emotion": "explaining", "text": "I've found errors in AI-generated math questions myself!", "gapAfter": 0.3, "action": "WRONG stamp at end of line" },
         { "id": "s4_l05", "speaker": "PROF", "emotion": "stern", "text": "Whoever uses the tool needs to check its work. Students and professors both have responsibilities." },
         { "id": "s4_l06", "speaker": "BOT", "emotion": "sad", "text": "ERROR DETECTED. EGO DEFLATED.", "ttsText": "Error detected. Ego... deflated." }
       ]
@@ -150,12 +153,12 @@
     {
       "id": "s5",
       "title": "The Experiment",
-      "startFrame": 2550,
+      "startFrame": 2535,
       "endFrame": 3150,
       "background": "lab",
-      "leadIn": 0.9,
-      "tailOut": 0.4,
-      "gap": 0.25,
+      "leadIn": 0.3,
+      "tailOut": 0.35,
+      "gap": 0.18,
       "lines": [
         { "id": "s5_l01", "speaker": "KJ", "emotion": "curious", "text": "What would convince you to try our AI assistant?" },
         { "id": "s5_l02", "speaker": "PROF", "emotion": "explaining", "text": "If it helps students understand vocabulary, interpret problems, and get more out of class." },
@@ -171,9 +174,9 @@
       "startFrame": 3150,
       "endFrame": 3600,
       "background": "stage",
-      "leadIn": 0.4,
-      "tailOut": 2.3,
-      "gap": 0.18,
+      "leadIn": 0.25,
+      "tailOut": 0.5,
+      "gap": 0.16,
       "lines": [
         { "id": "s6_l01", "speaker": "KJ", "emotion": "curious", "text": "So… would you actually let us test it?" },
         { "id": "s6_l02", "speaker": "PROF", "emotion": "happy", "text": "Absolutely. I'd be happy to try it on a trial basis." },

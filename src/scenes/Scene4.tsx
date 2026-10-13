@@ -53,7 +53,13 @@ export const Scene4: React.FC = () => {
         <Audio src={staticFile(SFX.bonk)} volume={1.0} />
       </Sequence>
 
-      <Camera x={0} y={0} zoom={1.0}>
+      <Camera
+        x={0}
+        y={0}
+        zoom={frame < l02 ? 1.04 : 1.0}
+        shake={stampFrame <= frame && frame < stampFrame + 25 ? 24 : 0}
+        shakeFrame={stampFrame}
+      >
         <Classroom crack={1} />
 
         {/* Confetti explosion at start on 2+2=5 */}

@@ -39,7 +39,10 @@ export const KJ: React.FC<HumanProps & { mic?: "hand" | "none"; micToMouth?: boo
   const e = exprFor(expression);
   const breathe = Math.sin(frame / 14) * 3;
   const bob = -talk * 6;
-  const lid = (i: 0 | 1) => Math.min(1, e.lid[i] + blink);
+  // Natural cartoon periodic blink (spontaneous blinks every ~85-140 frames)
+  const autoBlink = (frame % 85 >= 82) || (frame % 140 >= 137) ? 0.9 : 0;
+  const effectiveBlink = Math.max(blink, autoBlink);
+  const lid = (i: 0 | 1) => Math.min(1, e.lid[i] + effectiveBlink);
   return (
     <g>
       {/* shadow */}

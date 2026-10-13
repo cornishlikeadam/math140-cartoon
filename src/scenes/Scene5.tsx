@@ -23,6 +23,11 @@ export const Scene5: React.FC = () => {
 
   const l05 = getLine("s5_l05").localStart;
 
+  // Button press spring when BOT enthusiastically slams the START button
+  const buttonSlam = frame >= l05 && frame < l05 + 24;
+  const buttonYOffset = buttonSlam ? 16 : 0;
+  const botHoverY = buttonSlam ? 610 : 560;
+
   return (
     <AbsoluteFill>
       {/* Voice lines */}
@@ -41,7 +46,7 @@ export const Scene5: React.FC = () => {
         <Audio src={staticFile(SFX.tada)} volume={0.8} />
       </Sequence>
 
-      <Camera x={0} y={0} zoom={1.0}>
+      <Camera x={0} y={0} zoom={buttonSlam ? 1.03 : 1.0}>
         <Lab />
 
         <svg
@@ -55,7 +60,7 @@ export const Scene5: React.FC = () => {
             <ellipse cx={0} cy={0} rx={90} ry={24} fill="#475569" {...stroke(7)} />
 
             {/* Giant Big Red Dome Button */}
-            <g transform={`translate(0, ${Math.sin(frame / 6) * 3 - 10})`}>
+            <g transform={`translate(0, ${Math.sin(frame / 6) * 3 - 10 + buttonYOffset})`}>
               <path
                 d="M -70 0 C -70 -65 70 -65 70 0 Z"
                 fill={PALETTE.red}
@@ -102,7 +107,7 @@ export const Scene5: React.FC = () => {
           </g>
 
           {/* B.O.T. hovering above the button */}
-          <g transform="translate(960, 560)">
+          <g transform={`translate(960, ${botHoverY})`}>
             <BOT
               viseme={botViseme}
               expression={emotionAt(scene, "BOT", frame, "excited")}

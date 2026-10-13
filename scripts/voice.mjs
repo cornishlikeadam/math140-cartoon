@@ -29,13 +29,10 @@ const only = onlyIdx >= 0 ? new Set(args[onlyIdx + 1].split(",")) : null;
 const script = readScript();
 const provider =
   process.env.TTS_PROVIDER ||
-  (process.env.ELEVENLABS_API_KEY ? "elevenlabs" : process.env.OPENAI_API_KEY ? "openai" : null);
+  (process.env.ELEVENLABS_API_KEY ? "elevenlabs" : process.env.OPENAI_API_KEY ? "openai" : "say");
 
-if (!provider) {
-  fail(
-    "No TTS provider configured. BLOCKER: add ELEVENLABS_API_KEY=... or OPENAI_API_KEY=... to .env " +
-      "(or set TTS_PROVIDER=say to use macOS voices).",
-  );
+if (provider === "say") {
+  console.log("ℹ Using macOS voices (TTS_PROVIDER=say). Add ELEVENLABS_API_KEY to .env for studio cloud voices.");
 }
 
 fs.mkdirSync(VOICE_DIR, { recursive: true });
@@ -100,7 +97,7 @@ async function ttsOpenAI(line, voiceCfg, outFile) {
 
 function ttsSay(line, voiceCfg, outFile) {
   const args = ["-v", voiceCfg.say || "Samantha", "-o", outFile];
-  args.push("-r", String(voiceCfg.sayRate || process.env.SAY_RATE || 205));
+  args.push("-r", String(voiceCfg.sayRate || process.env.SAY_RATE || 160));
   run("say", [...args, line.text]);
 }
 

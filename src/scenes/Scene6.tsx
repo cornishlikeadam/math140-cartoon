@@ -22,7 +22,11 @@ export const Scene6: React.FC = () => {
 
   const l02 = getLine("s6_l02").localStart;
   const l06 = getLine("s6_l06");
-  const endCardTrigger = l06.localStart + l06.durationFrames + 10;
+  const endCardTrigger = l06.localStart + l06.durationFrames + 6;
+
+  // Cinematic push-in on KJ when addressing the camera for the moral/takeaway
+  const isKJToCamera = frame >= l06.localStart && frame < endCardTrigger;
+  const camZoom = frame >= endCardTrigger ? 1.0 : isKJToCamera ? 1.07 : 1.02;
 
   return (
     <AbsoluteFill>
@@ -42,7 +46,7 @@ export const Scene6: React.FC = () => {
         <Audio src={staticFile(SFX.pop)} volume={1.0} />
       </Sequence>
 
-      <Camera x={0} y={0} zoom={frame >= endCardTrigger ? 1.0 : 1.02}>
+      <Camera x={0} y={0} zoom={camZoom}>
         <Stage hue="blue" />
 
         <svg

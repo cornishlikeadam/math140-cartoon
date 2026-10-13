@@ -22,9 +22,15 @@ export const Scene1: React.FC = () => {
   const botViseme = visemeAt(scene, "BOT", frame, fps);
   const profViseme = visemeAt(scene, "PROF", frame, fps);
 
-  // Crash timing: line 1 ends around frame 180-200. Robot crash sequence:
-  const crashStart = 195;
-  const crashImpact = 215;
+  // Line anchors
+  const l01 = scene.lines[0];
+  const l03 = scene.lines[2];
+
+  // Crash timing dynamically anchored to dialogue:
+  const crashStart = l01 ? l01.localStart + l01.durationFrames - 6 : 138;
+  const crashImpact = crashStart + 16;
+  const titleTrigger = l03 ? l03.localStart + l03.durationFrames + 4 : 286;
+  const sceneDuration = scene.endFrame - scene.startFrame;
 
   const botDrop = spring({
     frame: frame - crashStart,
@@ -37,6 +43,20 @@ export const Scene1: React.FC = () => {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
+
+  // Dynamic cinematic camera pan & zoom
+  const camZoom = interpolate(
+    frame,
+    [0, crashStart, crashImpact, titleTrigger],
+    [1.04, 1.0, 1.02, 1.06],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+  );
+  const camX = interpolate(
+    frame,
+    [0, crashStart, crashImpact, l03.localStart, titleTrigger],
+    [-80, 0, 0, 100, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+  );
 
   return (
     <AbsoluteFill>
@@ -58,10 +78,10 @@ export const Scene1: React.FC = () => {
 
       {/* Camera with impact shake */}
       <Camera
-        x={0}
+        x={camX}
         y={0}
-        zoom={frame > 340 ? 1.05 : 1}
-        shake={crashImpact <= frame && frame < crashImpact + 30 ? 28 : 0}
+        zoom={camZoom}
+        shake={crashImpact <= frame && frame < crashImpact + 30 ? 30 : 0}
         shakeFrame={crashImpact}
       >
         {/* Background with dynamic ceiling crack */}
@@ -132,7 +152,7 @@ export const Scene1: React.FC = () => {
           />
 
           {/* Title Card at end of Scene 1 */}
-          <TitleCard frame={frame} triggerFrame={345} duration={105} />
+          <TitleCard frame={frame} triggerFrame={titleTrigger} duration={sceneDuration - titleTrigger} />
         </svg>
 
         {/* Subtitle Captions */}

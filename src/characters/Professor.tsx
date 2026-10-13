@@ -30,7 +30,10 @@ export const Professor: React.FC<HumanProps & { prop?: ProfProp; stampText?: str
   const e = exprFor(expression);
   const breathe = Math.sin(frame / 16) * 3;
   const bob = -talk * 5;
-  const lid = (i: 0 | 1) => Math.min(1, e.lid[i] + blink);
+  // Natural cartoon periodic blink
+  const autoBlink = (frame % 95 >= 92) || (frame % 150 >= 147) ? 0.9 : 0;
+  const effectiveBlink = Math.max(blink, autoBlink);
+  const lid = (i: 0 | 1) => Math.min(1, e.lid[i] + effectiveBlink);
 
   const propEl = (h: { x: number; y: number; angle: number }) => {
     const t = `translate(${h.x},${h.y}) rotate(${-h.angle + 180})`;

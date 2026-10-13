@@ -65,7 +65,14 @@ export const Scene2: React.FC = () => {
         <Audio src={staticFile(SFX.bonk)} volume={0.9} />
       </Sequence>
 
-      <Camera x={0} y={0} zoom={1.0}>
+      {/* Camera with bonk shake on censor bar slap */}
+      <Camera
+        x={frame < l03 ? -30 : frame > getLine("s2_l11").localStart ? 20 : 0}
+        y={0}
+        zoom={1.0}
+        shake={censorLine.localStart + 15 <= frame && frame < censorLine.localStart + 35 ? 20 : 0}
+        shakeFrame={censorLine.localStart + 15}
+      >
         <Stage hue="magenta" />
 
         {/* Five Rules HUD at Top */}
