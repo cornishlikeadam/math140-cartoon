@@ -3,6 +3,8 @@ import { Composition } from "remotion";
 import { Main } from "./Main";
 import { Scene1, Scene2, Scene3, Scene4, Scene5, Scene6 } from "./scenes";
 import { getScene } from "./timeline";
+import { FriendlyScene, FriendlyV2 } from "./v2/FriendlyV2";
+import v2Timeline from "./v2/timeline.json";
 
 export const RemotionRoot: React.FC = () => {
   const s1 = getScene("s1");
@@ -14,6 +16,8 @@ export const RemotionRoot: React.FC = () => {
 
   return (
     <>
+      <Composition id="FriendlyV2" component={FriendlyV2} durationInFrames={v2Timeline.durationInFrames} fps={v2Timeline.fps} width={1920} height={1080} />
+      {v2Timeline.scenes.map(scene => <Composition key={scene.id} id={`FriendlyV2-${scene.id}`} component={FriendlyScene} defaultProps={{ scene }} durationInFrames={scene.endFrame - scene.startFrame} fps={30} width={1920} height={1080} />)}
       {/* Complete 120-Second Animated Short (3,600 frames @ 30 FPS) */}
       <Composition
         id="Main"

@@ -1,0 +1,37 @@
+<template>
+<style>
+#v2-s5-root { position:absolute;inset:0;overflow:hidden;color:#fff8e9;font-family:system-ui,sans-serif; }
+#v2-s5-root .backdrop { position:absolute;inset:0;width:100%;height:100%;object-fit:cover; }
+#v2-s5-root .board { position:absolute;left:545px;top:145px;width:830px;min-height:210px;box-sizing:border-box;padding:28px 36px;border-radius:24px;background:#173d38;border:3px solid #d7bc88;text-align:center; }
+#v2-s5-root .board small { display:block;font-size:22px;letter-spacing:4px;color:#ffd2a0;margin-bottom:12px; }
+#v2-s5-root h1 { font-size:42px;line-height:1.15;margin:0 0 18px;font-family:serif; }
+#v2-s5-root .detail { font-size:29px;color:#bceadd; }
+#v2-s5-root .caption { position:absolute;left:135px;right:135px;bottom:30px;min-height:84px;box-sizing:border-box;padding:15px 26px;display:flex;gap:22px;align-items:center;border-radius:22px;background:#162b2c;border:2px solid #c4ddd2; }
+#v2-s5-root .caption strong { color:#ffd2a0;font-size:25px;flex-shrink:0; }
+#v2-s5-root .caption span { font-size:33px;line-height:1.18; }
+</style>
+<div data-hf-id="hf-a1sp" id="v2-s5-root" data-composition-id="v2-s5" data-width="1920" data-height="1080" data-duration="20.5">
+<img data-hf-id="hf-g81l" id="v2-s5-background" class="backdrop" data-layout-allow-overflow="" src="assets/lab.png" alt="lab">
+<div data-hf-id="hf-vhiw" class="board"><small data-hf-id="hf-dylj">MATH 140 · LEARN WITH CURIOSITY</small><h1 data-hf-id="hf-nzhu">Try • reflect • improve</h1><div data-hf-id="hf-6qab" class="detail">Optional practice · approved pilot · student feedback</div></div>
+<img data-hf-id="hf-61gd" id="v2-s5-KJ" src="assets/kj.png" alt="KJ" style="position:absolute;left:120px;top:385px;width:480px;height:575px;object-fit:contain">
+<img data-hf-id="hf-g2k0" id="v2-s5-PROF" src="assets/professor.png" alt="Professor" style="position:absolute;left:1280px;top:365px;width:490px;height:595px;object-fit:contain">
+<img data-hf-id="hf-zv6r" id="v2-s5-BOT" src="assets/bot.png" alt="B.O.T." style="position:absolute;left:775px;top:570px;width:370px;height:360px;object-fit:contain">
+<div data-hf-id="hf-j49z" id="v2-s5-s5_l01" class="clip caption" data-start="0.3" data-duration="2.8666666666666667" data-track-index="3"><strong data-hf-id="hf-30wr">KJ</strong><span data-hf-id="hf-87cx">How could we test our study sidekick?</span></div>
+<div data-hf-id="hf-gc12" id="v2-s5-s5_l02" class="clip caption" data-start="3.3333333333333335" data-duration="4.1" data-track-index="3"><strong data-hf-id="hf-xb3n">Professor</strong><span data-hf-id="hf-1n51">See whether it helps with vocabulary, reading problems, and understanding.</span></div>
+<div data-hf-id="hf-ik6h" id="v2-s5-s5_l03" class="clip caption" data-start="7.6" data-duration="2.466666666666667" data-track-index="3"><strong data-hf-id="hf-2snv">KJ</strong><span data-hf-id="hf-n7db">Would everyone need to use it?</span></div>
+<div data-hf-id="hf-5atc" id="v2-s5-s5_l04" class="clip caption" data-start="10.233333333333333" data-duration="4.1" data-track-index="3"><strong data-hf-id="hf-oc0j">Professor</strong><span data-hf-id="hf-0acp">We can offer a choice, with an approved practice activity.</span></div>
+<div data-hf-id="hf-wn2k" id="v2-s5-s5_l05" class="clip caption" data-start="14.5" data-duration="2.066666666666667" data-track-index="3"><strong data-hf-id="hf-h9xl">B.O.T.</strong><span data-hf-id="hf-wffw">A practice adventure! I’m ready.</span></div>
+<div data-hf-id="hf-4zme" id="v2-s5-s5_l06" class="clip caption" data-start="16.733333333333334" data-duration="3.2666666666666666" data-track-index="3"><strong data-hf-id="hf-nxpi">Professor</strong><span data-hf-id="hf-tloj">And we’ll ask what helped, and what didn’t.</span></div>
+</div>
+<script>
+{
+const tl = gsap.timeline({paused:true});
+tl.fromTo('#v2-s5-background',{scale:1},{scale:1.025,duration:20.5,ease:'none'},0);
+tl.fromTo('#v2-s5-KJ',{x:-18,opacity:0},{x:0,opacity:1,duration:0.45,ease:'power2.out'},0);
+tl.fromTo('#v2-s5-PROF',{x:18,opacity:0},{x:0,opacity:1,duration:0.45,ease:'power2.out'},0.12);
+tl.fromTo('#v2-s5-BOT',{y:16,opacity:0},{y:0,opacity:1,duration:0.5,ease:'power2.out'},0.25);
+tl.to('#v2-s5-BOT',{y:-3,duration:2,ease:'sine.inOut',yoyo:true,repeat:8},0.75);
+window.__timelines['v2-s5']=tl;
+}
+</script>
+</template>

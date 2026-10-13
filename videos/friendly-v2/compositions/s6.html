@@ -1,0 +1,37 @@
+<template>
+<style>
+#v2-s6-root { position:absolute;inset:0;overflow:hidden;color:#fff8e9;font-family:system-ui,sans-serif; }
+#v2-s6-root .backdrop { position:absolute;inset:0;width:100%;height:100%;object-fit:cover; }
+#v2-s6-root .board { position:absolute;left:545px;top:145px;width:830px;min-height:210px;box-sizing:border-box;padding:28px 36px;border-radius:24px;background:#173d38;border:3px solid #d7bc88;text-align:center; }
+#v2-s6-root .board small { display:block;font-size:22px;letter-spacing:4px;color:#ffd2a0;margin-bottom:12px; }
+#v2-s6-root h1 { font-size:42px;line-height:1.15;margin:0 0 18px;font-family:serif; }
+#v2-s6-root .detail { font-size:29px;color:#bceadd; }
+#v2-s6-root .caption { position:absolute;left:135px;right:135px;bottom:30px;min-height:84px;box-sizing:border-box;padding:15px 26px;display:flex;gap:22px;align-items:center;border-radius:22px;background:#162b2c;border:2px solid #c4ddd2; }
+#v2-s6-root .caption strong { color:#ffd2a0;font-size:25px;flex-shrink:0; }
+#v2-s6-root .caption span { font-size:33px;line-height:1.18; }
+</style>
+<div data-hf-id="hf-okni" id="v2-s6-root" data-composition-id="v2-s6" data-width="1920" data-height="1080" data-duration="15">
+<img data-hf-id="hf-om16" id="v2-s6-background" class="backdrop" data-layout-allow-overflow="" src="assets/stage.png" alt="stage">
+<div data-hf-id="hf-vhiw" class="board"><small data-hf-id="hf-dylj">MATH 140 · LEARN WITH CURIOSITY</small><h1 data-hf-id="hf-shms">Think first. Learn together.</h1><div data-hf-id="hf-s7bs" class="detail">Ask for a hint. Explain the idea. Check the work.</div></div>
+<img data-hf-id="hf-x1ty" id="v2-s6-KJ" src="assets/kj.png" alt="KJ" style="position:absolute;left:120px;top:385px;width:480px;height:575px;object-fit:contain">
+<img data-hf-id="hf-abn3" id="v2-s6-PROF" src="assets/professor.png" alt="Professor" style="position:absolute;left:1280px;top:365px;width:490px;height:595px;object-fit:contain">
+<img data-hf-id="hf-3wcg" id="v2-s6-BOT" src="assets/bot.png" alt="B.O.T." style="position:absolute;left:775px;top:570px;width:370px;height:360px;object-fit:contain">
+<div data-hf-id="hf-g3j0" id="v2-s6-s6_l01" class="clip caption" data-start="0.26666666666666666" data-duration="2.066666666666667" data-track-index="3"><strong data-hf-id="hf-30wr">KJ</strong><span data-hf-id="hf-d49v">Would you try a small pilot?</span></div>
+<div data-hf-id="hf-d7bk" id="v2-s6-s6_l02" class="clip caption" data-start="2.5" data-duration="2.066666666666667" data-track-index="3"><strong data-hf-id="hf-xb3n">Professor</strong><span data-hf-id="hf-fej4">Yes. Let’s learn from it together.</span></div>
+<div data-hf-id="hf-iz4t" id="v2-s6-s6_l03" class="clip caption" data-start="4.733333333333333" data-duration="1.0333333333333334" data-track-index="3"><strong data-hf-id="hf-h9xl">B.O.T.</strong><span data-hf-id="hf-jqlf">Study-sidekick mode: ready!</span></div>
+<div data-hf-id="hf-t1bz" id="v2-s6-s6_l04" class="clip caption" data-start="5.933333333333334" data-duration="1.7333333333333334" data-track-index="3"><strong data-hf-id="hf-oc0j">Professor</strong><span data-hf-id="hf-hjjn">With students steering the thinking.</span></div>
+<div data-hf-id="hf-xeib" id="v2-s6-s6_l05" class="clip caption" data-start="7.833333333333333" data-duration="2.7333333333333334" data-track-index="3"><strong data-hf-id="hf-nhq5">B.O.T.</strong><span data-hf-id="hf-lbhe">I’ll bring the hints. You bring the ideas.</span></div>
+<div data-hf-id="hf-1bse" id="v2-s6-s6_l06" class="clip caption" data-start="10.733333333333333" data-duration="3.7666666666666666" data-track-index="3"><strong data-hf-id="hf-2snv">KJ</strong><span data-hf-id="hf-n08z">Think first. Ask for help. Check the work. That’s learning together.</span></div>
+</div>
+<script>
+{
+const tl = gsap.timeline({paused:true});
+tl.fromTo('#v2-s6-background',{scale:1},{scale:1.025,duration:15,ease:'none'},0);
+tl.fromTo('#v2-s6-KJ',{x:-18,opacity:0},{x:0,opacity:1,duration:0.45,ease:'power2.out'},0);
+tl.fromTo('#v2-s6-PROF',{x:18,opacity:0},{x:0,opacity:1,duration:0.45,ease:'power2.out'},0.12);
+tl.fromTo('#v2-s6-BOT',{y:16,opacity:0},{y:0,opacity:1,duration:0.5,ease:'power2.out'},0.25);
+tl.to('#v2-s6-BOT',{y:-3,duration:2,ease:'sine.inOut',yoyo:true,repeat:6},0.75);
+window.__timelines['v2-s6']=tl;
+}
+</script>
+</template>

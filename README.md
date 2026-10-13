@@ -1,137 +1,70 @@
-# Math 140 — AI vs. the Human Brain
-> A 120-second (3,600 frames @ 30 FPS) educational cartoon animated in **Remotion**, powered by **Rhubarb Lip Sync**, **Manim Community**, and **FFmpeg**.
+# Math 140 — Your Thinking, Your AI Sidekick (v2)
 
-Inspired by early-2000s American Saturday morning television animation with hand-drawn line-boil, expressive characters, and rapid-fire visual comedy.
+A friendlier alternate cartoon with expressive original sci-fi characters and warm painted anime settings. New KJ, Professor and B.O.T. artwork, a rewritten 39-line script, six scenes, a VoiceStudio speech adapter, and independent Remotion and HyperFrames assemblies.
 
----
+**Production status:** artwork and visual blocking are ready for review. VoiceStudio speech, animated facial rigs and the final soundtrack still need the video-finishing pass. The 120-second visual timeline uses estimated speech windows. This repo does not yet contain a finished voiced v2 movie.
 
-## 🎬 Project Overview
+![New v2 scene](docs/v2/scene1.png)
 
-- **Format:** 1920 × 1080 (Full HD), 30 FPS, H.264 (yuv420p) + AAC Stereo.
-- **Duration:** Exactly 120.000s (3,600 frames).
-- **Core Characters:**
-  - **KJ:** Energetic college student and interviewer in orange "140" hoodie.
-  - **The Professor:** Intelligent, approachable, mildly sarcastic mathematician with purple argyle vest and round glasses.
-  - **B.O.T.:** Enthusiastic floating robot with an animated LED matrix face and a running "HUMAN OVERSIGHT" censor bar gag.
+## Review the new version
 
----
-
-## 📺 Visual Preview & Contact Sheet
-
-![Math 140 Animation Contact Sheet](docs/contact-sheet.png)
-
-### Scene Gallery
-| Scene 1: The Big Question (0:00–0:15) | Scene 2: The Five Rules (0:15–0:45) | Scene 3: Where Students Struggle (0:45–1:05) |
-| :---: | :---: | :---: |
-| ![Scene 1](docs/previews/scene1.png) | ![Scene 2](docs/previews/scene2.png) | ![Scene 3](docs/previews/scene3.png) |
-| **Scene 4: When AI Gets It Wrong (1:05–1:25)** | **Scene 5: The Experiment (1:25–1:45)** | **Scene 6: The Final Verdict (1:45–2:00)** |
-| ![Scene 4](docs/previews/scene4.png) | ![Scene 5](docs/previews/scene5.png) | ![Scene 6](docs/previews/scene6.png) |
-
----
-
-## 🏗 Six Production Stages (`cartoon-producer` Skill)
-
-The workflow is governed by the `cartoon-producer` skill located in `.agents/skills/cartoon-producer/SKILL.md`:
-
-| Stage | Automated Task | Output |
-|---|---|---|
-| **1. Screenwriting** | Divide adapted dialogue into 6 timed scenes | `production/script.json`, `production/storyboard.md` |
-| **2. Art Direction** | Character rigs, SVG line-boil filter, backgrounds | `src/characters/`, `src/backgrounds/`, `src/theme.ts` |
-| **3. Voice Production** | Per-line TTS generation, Rhubarb phoneme sync, frame placement | `public/audio/voice/*.wav`, `public/audio/lipsync/*.json`, `src/data/timeline.json` |
-| **4. Animation** | Manim math explainers, scene compositions, camera motion | `public/manim/*.mp4`, `src/scenes/Scene1..6.tsx` |
-| **5. Sound & Editing** | Original 144 BPM theme music bed (ducked), cartoon SFX library, captions | `public/audio/music/`, `public/audio/sfx/`, `src/Main.tsx` |
-| **6. Quality Assurance** | Frame-exact ffprobe validation, loudness normalization (−16 LUFS), contact sheet | `out/final.mp4`, `out/contact-sheet.png` |
-
----
-
-## 🚀 Quick Start
-
-### 1. Prerequisites
-Ensure you have the required tools installed on your operating system:
-- **Node.js** v20+
-- **FFmpeg & ffprobe** (`brew install ffmpeg`)
-- **Rhubarb Lip Sync** (`rhubarb --version`)
-- **Manim Community** (`manim --version`)
-
-To verify your environment:
-```bash
-npm run doctor
-```
-
-### 2. Configure Voices & Automation API
-Copy the `.env.example` file:
-```bash
-cp .env.example .env
-```
-Open `.env` and add your ElevenLabs API key:
-```env
-ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
-```
-*(If no API key is set, the system automatically falls back to macOS built-in voices via `say`).*
-
-### 3. Generate Audio & Lip Sync
-To re-run voice generation, Rhubarb lip sync, and frame-accurate timing:
-```bash
-npm run produce:audio
-```
-
-### 4. Render Math Animations (Manim)
-```bash
-npm run manim
-```
-
-### 5. Preview in Remotion Studio
-```bash
+```sh
+npm install
+npm run v2:script:check
+npm run v2:check
 npm run dev
 ```
 
-### 6. Export Full Video & Run QA
-```bash
-npm run render
-npm run qa:post
+Choose **FriendlyV2** (full visual assembly) or **FriendlyV2-s1** through **FriendlyV2-s6**. These previews are silent until real speech is generated and measured. The default `render` and `produce` commands now target v2 and refuse a final export while audio is missing.
+
+| Classroom | Five learning rules | Cozy study |
+|---|---|---|
+| ![](docs/v2/scene1.png) | ![](docs/v2/scene2.png) | ![](docs/v2/scene3.png) |
+| Checking together | Optional pilot | Learning together |
+| ![](docs/v2/scene4.png) | ![](docs/v2/scene5.png) | ![](docs/v2/scene6.png) |
+
+## New voices with VoiceStudio
+
+Use [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio). Start its backend and finish engine setup, then save three distinct synthetic voice profiles. Character recipes and audition directions are in `production/v2/script.json`.
+
+Copy `production/v2/voicestudio.env.example` settings into the root `.env` and set the real `VOICESTUDIO_VOICE_KJ`, `VOICESTUDIO_VOICE_PROF` and `VOICESTUDIO_VOICE_BOT` profile IDs. The adapter validates them against `/v1/audio/voices`; OpenAI-style voice aliases are rejected because VoiceStudio maps those aliases to one default voice.
+
+```sh
+npm run v2:audio       # VoiceStudio WAVs → Rhubarb cues → measured timing
+npm run v2:export      # synchronize portable production assets
+npm run v2:render     # readiness gate, then full-HD final export
+npm run v2:qa:post    # inspect completed video format, loudness and frames
 ```
-The final exported video will be saved to `out/final.mp4`.
 
----
+Speech is cached by text, engine and profile ID. V2 does not silently fall back to system voices. Audio goes to `public/audio/v2/`; the original voice files stay separate. Prerequisites: Node.js, FFmpeg/ffprobe and Rhubarb.
 
-## 🛠 How to Customize & Extend
+## More than Remotion
 
-### 1. Modifying Dialogue
-1. Edit the source screenplay in `production/screenplay.md`.
-2. Update the corresponding lines in `production/script.json`.
-3. Re-generate voices, lip sync, and timeline:
-   ```bash
-   npm run produce:audio
-   ```
-4. Re-render:
-   ```bash
-   npm run render
-   ```
+**HyperFrames:** `videos/friendly-v2` contains a separate 120-second HTML composition with six sub-compositions, shared artwork and timed captions. Run `npm run v2:export` whenever v2 timing changes, then:
 
-### 2. Changing Scene Durations
-1. Open `production/script.json`.
-2. Adjust `startFrame` and `endFrame` for the scenes (maintaining the total 3,600 frames).
-3. Update `src/Main.tsx` and `src/Root.tsx` sequence frame boundaries.
-4. Run `npm run timing` to re-align dialogue within the new boundaries.
+```sh
+cd videos/friendly-v2
+npm run dev
+npm run check
+npm run render  # also checks that real v2 audio is ready
+```
 
-### 3. Replacing or Styling Characters
-- **KJ:** `src/characters/KJ.tsx`
-- **Professor:** `src/characters/Professor.tsx`
-- **B.O.T.:** `src/characters/BOT.tsx`
-- **Common Rig Parts (Viseme mouths, eyes, limbs):** `src/characters/parts.tsx`
+Keep the complete project folder: its painted backgrounds are external assets, not a self-contained single HTML file.
 
----
+**OpenMontage:** the [character-animation pipeline](https://github.com/calesthio/OpenMontage/blob/main/pipeline_defs/character-animation.yaml) can supply reusable rigs, pose libraries, character review, sound mixing and final assembly. `production/v2/engine-handoff.json` is a portable reference/input packet, not a native OpenMontage checkpoint. Local checkout found at `/Users/kjcornish/OpenMontage`.
 
-## 📜 Scene Timeline
+The sprites currently have single facial poses. The next agent should build viseme mouth layers and expressive gestures, generate the three VoiceStudio performances and a gentle soundtrack, then review and export the finished video. See [the complete finishing handoff](docs/v2/HANDOFF.md).
 
-- **Scene 1 — The Big Question** (00:00 – 00:15 / Frames 0–450)
-- **Scene 2 — The Five Rules** (00:15 – 00:45 / Frames 450–1350)
-- **Scene 3 — Where Students Struggle** (00:45 – 01:05 / Frames 1350–1950)
-- **Scene 4 — When AI Gets It Wrong** (01:05 – 01:25 / Frames 1950–2550)
-- **Scene 5 — The Experiment** (01:25 – 01:45 / Frames 2550–3150)
-- **Scene 6 — The Final Verdict** (01:45 – 02:00 / Frames 3150–3600)
+## Production sources
 
----
+- `production/v2/script.json` and `screenplay.md`: new dialogue and course rules.
+- `production/v2/art-bible.md`, `image-prompts.json`, `asset-manifest.json`: design direction, built-in ImageGen prompts and checksums.
+- `public/art/v2/`: four new background plates and three transparent character sprites.
+- `src/v2/`: new Remotion assembly and explicitly estimated/measured timeline.
+- `videos/friendly-v2/`: independent HyperFrames project.
 
-## 📄 License
-UNLICENSED — Math 140 AI Learning Research
+## Original version
+
+The original `Main` and `Scene1`–`Scene6` compositions remain available. `npm run render:legacy` and `npm run produce:legacy` use the original production. The original [README and production instructions](docs/v1-README.md), screenplay, SVG rigs, contact sheet and speech are preserved.
+
+UNLICENSED — Math 140 AI Learning Research.

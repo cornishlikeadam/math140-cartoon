@@ -15,10 +15,10 @@ import path from "node:path";
 import crypto from "node:crypto";
 import os from "node:os";
 import {
-  VOICE_DIR, allLines, fail, loadEnv, ok, p, readScript, run,
+  EDITION, VOICE_DIR, allLines, fail, loadEnv, ok, p, readScript, run,
 } from "./lib.mjs";
 
-const RAW_DIR = p("production", "voice_raw");
+const RAW_DIR = EDITION === "v2" ? p("production", "v2", "voice_raw") : p("production", "voice_raw");
 
 loadEnv();
 const args = process.argv.slice(2);
@@ -29,7 +29,29 @@ const only = onlyIdx >= 0 ? new Set(args[onlyIdx + 1].split(",")) : null;
 const script = readScript();
 const provider =
   process.env.TTS_PROVIDER ||
-  (process.env.ELEVENLABS_API_KEY ? "elevenlabs" : process.env.OPENAI_API_KEY ? "openai" : "say");
+  (EDITION === "v2" ? "voicestudio" : process.env.ELEVENLABS_API_KEY ? "elevenlabs" : process.env.OPENAI_API_KEY ? "openai" : "say");
+
+if (EDITION === "v2" && provider !== "voicestudio") fail("V2 requires VoiceStudio. Use the legacy pipeline for other providers.");
+
+const voiceStudioBase = (process.env.VOICESTUDIO_BASE_URL || "http://127.0.0.1:3900/v1").replace(/\/$/, "");
+const voiceStudioModel = process.env.VOICESTUDIO_MODEL || "omnivoice";
+const voiceStudioHeaders = { "Content-Type": "application/json", ...(process.env.VOICESTUDIO_API_KEY ? { Authorization: `Bearer ${process.env.VOICESTUDIO_API_KEY}` } : {}) };
+const studioProfiles = {};
+if (provider === "voicestudio") {
+  let catalog;
+  try {
+    const response = await fetch(`${voiceStudioBase}/audio/voices`, { headers: voiceStudioHeaders, signal: AbortSignal.timeout(10000) });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    catalog = await response.json();
+  } catch (error) { fail(`VoiceStudio unavailable at ${voiceStudioBase}: ${error.message}. Start its backend and finish engine setup; no system-voice fallback will run.`); }
+  for (const [speaker, character] of Object.entries(script.characters)) {
+    const id = process.env[`VOICESTUDIO_VOICE_${speaker}`] || character.voice?.voicestudio;
+    const profile = catalog.voices?.find(v => v.type === "profile" && v.voice_id === id);
+    if (!profile) fail(`Set VOICESTUDIO_VOICE_${speaker} to a saved profile ID from VoiceStudio. OpenAI aliases map to one default voice and are not accepted for this cast.`);
+    studioProfiles[speaker] = profile.voice_id;
+  }
+  if (new Set(Object.values(studioProfiles)).size !== Object.keys(script.characters).length) fail("Each V2 character needs a different saved VoiceStudio profile.");
+}
 
 if (provider === "say") {
   console.log("ℹ Using macOS voices (TTS_PROVIDER=say). Add ELEVENLABS_API_KEY to .env for studio cloud voices.");
@@ -95,6 +117,18 @@ async function ttsOpenAI(line, voiceCfg, outFile) {
   fs.writeFileSync(outFile, Buffer.from(await res.arrayBuffer()));
 }
 
+async function ttsVoiceStudio(line, outFile) {
+  const response = await fetch(`${voiceStudioBase}/audio/speech`, {
+    method: "POST", headers: voiceStudioHeaders,
+    body: JSON.stringify({ model: voiceStudioModel, voice: studioProfiles[line.speaker], input: line.text, response_format: "wav", language: "en", speed: 1 }),
+    signal: AbortSignal.timeout(1800000),
+  });
+  if (!response.ok) throw new Error(`VoiceStudio ${response.status}: ${await response.text()}`);
+  const bytes = Buffer.from(await response.arrayBuffer());
+  if (bytes.toString("ascii", 0, 4) !== "RIFF" || bytes.toString("ascii", 8, 12) !== "WAVE") throw new Error("VoiceStudio returned non-WAV audio");
+  fs.writeFileSync(outFile, bytes);
+}
+
 function ttsSay(line, voiceCfg, outFile) {
   const args = ["-v", voiceCfg.say || "Samantha", "-o", outFile];
   args.push("-r", String(voiceCfg.sayRate || process.env.SAY_RATE || 160));
@@ -114,7 +148,7 @@ for (const srcLine of lines) {
   const wav = path.join(VOICE_DIR, `${line.id}.wav`);
   const metaFile = path.join(VOICE_DIR, `${line.id}.meta.json`);
   const sha = (x) => crypto.createHash("sha1").update(JSON.stringify(x)).digest("hex");
-  const rawHash = sha([provider, line.text, line.emotion, voiceCfg, line.voiceSettings]);
+  const rawHash = sha([provider, line.text, line.emotion, voiceCfg, line.voiceSettings, provider === "voicestudio" ? [voiceStudioBase, voiceStudioModel, studioProfiles[line.speaker]] : null]);
   const hash = sha([rawHash, ch.fx, line.tempo]);
 
   if (fs.existsSync(wav) && !fs.existsSync(metaFile) && !force) {
@@ -144,7 +178,8 @@ for (const srcLine of lines) {
   if (!rawValid) {
     for (let attempt = 1; ; attempt++) {
       try {
-        if (provider === "elevenlabs") await ttsElevenLabs(line, voiceCfg, raw);
+        if (provider === "voicestudio") await ttsVoiceStudio(line, raw);
+        else if (provider === "elevenlabs") await ttsElevenLabs(line, voiceCfg, raw);
         else if (provider === "openai") await ttsOpenAI(line, voiceCfg, raw);
         else if (provider === "say") ttsSay(line, voiceCfg, raw);
         else fail(`Unknown TTS_PROVIDER ${provider}`);

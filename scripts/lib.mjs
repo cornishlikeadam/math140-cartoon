@@ -7,10 +7,11 @@ import { fileURLToPath } from "node:url";
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const p = (...parts) => path.join(ROOT, ...parts);
 
-export const SCRIPT_PATH = p("production", "script.json");
-export const TIMELINE_PATH = p("src", "data", "timeline.json");
-export const VOICE_DIR = p("public", "audio", "voice");
-export const LIPSYNC_DIR = p("public", "audio", "lipsync");
+export const EDITION = process.env.MATH140_EDITION === "v2" ? "v2" : "v1";
+export const SCRIPT_PATH = EDITION === "v2" ? p("production", "v2", "script.json") : p("production", "script.json");
+export const TIMELINE_PATH = EDITION === "v2" ? p("src", "v2", "timeline.json") : p("src", "data", "timeline.json");
+export const VOICE_DIR = EDITION === "v2" ? p("public", "audio", "v2", "voice") : p("public", "audio", "voice");
+export const LIPSYNC_DIR = EDITION === "v2" ? p("public", "audio", "v2", "lipsync") : p("public", "audio", "lipsync");
 
 // Minimal .env loader (no dependency).
 export function loadEnv() {

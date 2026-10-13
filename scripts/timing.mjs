@@ -10,7 +10,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
-  LIPSYNC_DIR, TIMELINE_PATH, VOICE_DIR, durationSeconds, fail, ok, readJSON, readScript, writeJSON,
+  EDITION, LIPSYNC_DIR, TIMELINE_PATH, VOICE_DIR, durationSeconds, fail, ok, readJSON, readScript, writeJSON,
 } from "./lib.mjs";
 
 const script = readScript();
@@ -64,7 +64,7 @@ const scenes = script.scenes.map((scene) => {
       startFrame: scene.startFrame + localStart,
       durationFrames,
       durationSec: +m.dur.toFixed(3),
-      audio: `audio/voice/${m.line.id}.wav`,
+      audio: `audio/${EDITION === "v2" ? "v2/" : ""}voice/${m.line.id}.wav`,
       mouthCues: m.cues,
     };
   });
@@ -86,6 +86,7 @@ const total = scenes.at(-1).endFrame;
 if (total !== durationInFrames) fail(`Scenes end at frame ${total}, expected ${durationInFrames}.`);
 
 writeJSON(TIMELINE_PATH, {
+  timingStatus: "measured",
   generatedAt: new Date().toISOString(),
   fps, width, height, durationInFrames,
   title: script.meta.title,
